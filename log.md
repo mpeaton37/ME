@@ -51,4 +51,18 @@ iCloud says it's full... it isn't.  Time suck
 [ Alan Parsons Video ]( )
 - Vocal Comping
 - Aritha Franklin tape distortion
-- 
+
+# 11/25/2017
+
+# JUCE'17
+### Julian Storer
+- [Does your code actually matter](https://youtu.be/Yd0Ef6uzJb0?t=25m2s)
+- [ Smule on me ](https://youtu.be/MQWKfs-qP7o?t=13m22s)
+- [ MiMi and Elaine Chew ](https://www.amazon.com/Mathematical-Computational-Modeling-Tonality-International/dp/B00Z8EUIOG) 
+- MusArt, Morpheus , Tristan chord, 
+
+How efficient is your code?
+
+# 11/26/2017
+[ Stone Aerospace ](http://stoneaerospace.com)
+
