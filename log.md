@@ -61,8 +61,35 @@ iCloud says it's full... it isn't.  Time suck
 - [ MiMi and Elaine Chew ](https://www.amazon.com/Mathematical-Computational-Modeling-Tonality-International/dp/B00Z8EUIOG) 
 - MusArt, Morpheus , Tristan chord, 
 
+### Phoenix Perry
+- [ David Kanaga ](http://www.davidkanaga.com/)
+- BOTS
+
+### Jon Latane  (JUCEish)
+- [ topological ](https://topologica.co/)
+
+### Andreas Gustafsson
+- Space-Time transforms
+  - [ Velasco et. al. Constructing Constant Q](https://www.univie.ac.at/nonstatgab/pdf_files/dohogve11_amsart.pdf)
+  - [ Holighaus N et. al. "A Frameowrk for invertible..."](http://www.univie.ac.at/nonstatgab/pdf_files/dogrhove12_amsart.pdf)
+  - *Gaborator library*
+
+### [Angus Hewlett ](https://www.youtube.com/watch?v=cn-5k8fm_u0)
+- [FXpansion](https://www.fxpansion.com/)
+- [ simd library ](https://github.com/angushewlett/simd2voice)
+- SIMD vector classes and branchless algorithms for audio
+  - {SLP: [System, heterogeneous], TLP: [Thread, host/OS], ILP: [Instruction, 1ns], DLP: [Data, SIMD]}
+  - Instruction Latency <- [ data dependencies, cache miss,etc.]
+  - Optimal Interleaving... 
+  
+  
+  
+  
+  
+ 
 How efficient is your code?
 
 # 11/26/2017
 [ Stone Aerospace ](http://stoneaerospace.com)
 
+# 11/28/2017
