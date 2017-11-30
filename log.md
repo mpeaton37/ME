@@ -145,7 +145,20 @@ Valgrind :[JIT/VM, any compiler, one thread AAT, 20-50 slow down],
 
 #### Package Manager
 [Blizzard](https://github.com/Blizzard/clang)
-[other](https://github.com/berkus/clang-packaging-P0235R0)
+[Blizzard](https://github.com/berkus/clang-packaging-P0235R0)
+[Hunter](https://github.com/ruslo/hunter)
+[Conan](https://github.com/conan-io/conan)
+
+##### References
+[Timur Doumler, Readable Modern C++ Russia 2017](https://youtube.com/watch?v=6AoifPEOAXM)
+
+### Andre Bergner
+[Andre Bergner github](https://github.com/andre-bergner)
+##### [Nonlinear oscillators](https://youtu.be/8G0EVWcysng)
+[Stuart-Landau Equation](https://community.dur.ac.uk/suzanne.fielding/teaching/HST/sec8.pdf)
+[Hopf Bifurcation](https://en.wikipedia.org/wiki/Hopf_bifurcation) [Arnold's tongue](https://en.wikipedia.org/wiki/Arnold_tongue)
+[Duffing oscillator](https://en.wikipedia.org/wiki/Duffing_equation)
+[Synchronization](https://www.amazon.com/dp/052153352X/_encoding=UTF8?coliid=I3F61YVR8LM95Y&colid=1Q7QLLP4GW2C0&psc=0)
 
 # 11/26/2017
 [ Stone Aerospace ](http://stoneaerospace.com)
