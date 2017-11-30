@@ -76,20 +76,90 @@ iCloud says it's full... it isn't.  Time suck
 
 ### [Angus Hewlett ](https://www.youtube.com/watch?v=cn-5k8fm_u0)
 - [FXpansion](https://www.fxpansion.com/)
-- [ simd library ](https://github.com/angushewlett/simd2voice)
+- [ SIMD library ](https://github.com/angushewlett/simd2voice)
 - SIMD vector classes and branchless algorithms for audio
   - {SLP: [System, heterogeneous], TLP: [Thread, host/OS], ILP: [Instruction, 1ns], DLP: [Data, SIMD]}
   - Instruction Latency <- [ data dependencies, cache miss,etc.]
   - Optimal Interleaving... 
-  
-  
-  
-  
-  
+- Branchless conditional masks
+  - result = _mm_and_ps(mask, [1,0,1.2,2.0,1.5])
+  - naive oscillator using conditional masks
+
+```cpp 
+	phase += increment;
+	phase -= ((phase >= 1.f) & 2.f);
+	phase  = _mm_add_pas)phase,increment);
+	mask   = _mm_cmp_gte_ps(phase,1.f);
+	step   = _mm_and_ps(2.f,mask);
+	phase  = _mm_sub_ps(phase,step);
+```
+[polyblep](https://pdfs.semanticscholar.org/3871/2d0f05e1904ec8d8eed0a5c872a4146ccf60.pdf)
  
 How efficient is your code?
+
+### Anastasia Kazakova (JetBrains)
+```cpp 
+//what does this evaluate to?
+#ifdef MAGIC
+template<int> 
+struct x {
+  x(int i) {}
+}
+#else
+int x = 100;
+#endif
+
+void test(int y) {
+  const int a = 100;
+
+// expression or template?
+  auto foo = x<a>(0);
+}
+```
+ 
+#### Static Analysis Tools
+
+ [CppCheck](https://sourceforge.net/p/cppcheck/wiki/ListOfChecks/)
+ [Clang-analyzer](https://clang-analyzer.llvm.org/available_checks.html)
+ [Clang-tidy](http://clang.llvm.org/extra/clang-tidy)
+ [C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines)
+
+#### Dynamic Analysis Tools
+
+[Valgrind = [ Memcheck, Cachegrind, Callgrind, Hellgrind, Massif ]](http://valgrind.org)
+```python
+{ 
+Valgrind :[JIT/VM, any compiler, one thread AAT, 20-50 slow down],
+ Sanitizers:[ Clang(3.1-3.2) GCC(4.8), require recompilation, 2-5 slow down]
+}
+```
+
+#### Refactoring
+[Clang-Rename]()
+[LegalizeAdulthood](https://github.com/LegalizeAdulthood/refactor-test-suite)
+
+#### Unit Testing
+```Python 
+  { Google Test:45, Boost.Test:26,CppUnit:11, CppUTest:5, Catch:5   }
+```
+
+#### Package Manager
+[Blizzard](https://github.com/Blizzard/clang)
+[other](https://github.com/berkus/clang-packaging-P0235R0)
 
 # 11/26/2017
 [ Stone Aerospace ](http://stoneaerospace.com)
 
-# 11/28/2017
+# 11/29/2017
+### Continued review of JUCE 2017 (notes appended to 11/25/2017)
+[Real-time IIR filter design introduction](http://www.eas.uccs.edu/~mwickert/ece5655/lecture_notes/ARM/ece5655_chap7.pdf)
+
+# 11/30/2017
+###Stephen Plaza
+- [ Image segmentation in Spark](https://arxiv.org/pdf/1604.00385.pdf)
+  +  Boundary Prediction -> Watershed -> Agglomation
+    * ? Optimality of Lumped operations
+    *  
+
+### More JUCE
+
