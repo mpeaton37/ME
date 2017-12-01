@@ -160,6 +160,98 @@ Valgrind :[JIT/VM, any compiler, one thread AAT, 20-50 slow down],
 [Duffing oscillator](https://en.wikipedia.org/wiki/Duffing_equation)
 [Synchronization](https://www.amazon.com/dp/052153352X/_encoding=UTF8?coliid=I3F61YVR8LM95Y&colid=1Q7QLLP4GW2C0&psc=0)
 
+### Dave Ramirez
+[Developing Audio applications with JavaScript](https://youtu.be/WxRWgafjXSA)
+[github](https://www.github.com/ramirezd42)
+
+### Dave Rowland
+[Using JUCE value trees and modern C++ to build large scale applicaitons](https://youtu.be/3IaMjH5lBEY)
+[github](https://github.com/drowaudio/drowaudio)
+
+### David Zicarelli
+[Code generating Littlefoot](https://youtu.be/u0cmFmCT66A)
+- "The longer I an stay in the problem space, the better"
+- Real time code generation with printf for ROLI 
+
+### Devendra Parakh
+[Techniques for debugging realtime audio issues](https://youtu.be/MfWgNUsEleo)
+no IO -> log to buffers 
+[Firelog](https://developer.apple.com/documentation/iokit/iofirewiredeviceinterface/1555664-firelog?language=objc)
+[tutorial](https://www.juce.com/doc/tutorial_audio_parameter)
+Dry,Wet,Dry - e^i\pi * Wet := Audio Cancellation,  Look for artifacts
+
+### Friedeman Schautz
+[The Development of Ableton Live](https://youtu.be/_mnpp-Wuk3A)
+Challenges: evolving UI, Language evolution, testing (coverage), CI complexity
+Push Interface is Python
+
+### Martin Shuppius
+[Physical modelling of guitar strings](https://youtu.be/sxt5rxF_PdI)
+Martin.Schuppius@gmail.com
+
+#### References
+- [S. Bilbao "Numerical Sound Synthesis" Wiley & Sons Ltd, 2009](http://www.wiley.com/WileyCDA/WileyTitle/productCd-0470510463.html)
+- [Julius O. Smith "Physical Audio Signal Processing"](https://ccrma.standofrd.edu/~/jos/pasp/) (Sept. 15, 2017)
+- [H. Mansour "The bowed string and its playability: Theory, simulatino and analysis" PhD thesis, Dept. of Music Rsearch McGill University, Montreialm Quebec, Cancada, 2016.](http://www.music.mcgill.ca/caml/lib/exe/fetch.php?media=publications:phd_mansour_2016.pdf)
+- [J. Woodhouse, "On the synthesis of guiltar plucks", Acta Acustica united with Acustica, vol. 90, pp. 928-944, 2004.](http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=52A9E17345C828A1D403451496C49830?doi=10.1.1.701.1411&rep=rep1&type=pdf)
+
+
+### Glenn Kasten
+[Github](https://github.com/gkasten)
+[Statistical and ML analysis of real time audio performance logs](https://youtu.be/3DK20e1-hzU)
+
+#### Latency in Android audio loop, reduced latency -> dropouts,   
+What to log:
+
+- Task wakeup times
+- Task execution times
+- Available CPU bandwidth
+- CPU core ID
+- other...
+
+#### Causes of lag:
+- Fixed constant hardware cost
+- USB
+- interupt disabling by wifi, fingerprint reader etc.
+- CPU clock frequency variation
+- application related processing consistancy, SIMD, branchless etc.
+
+### Sanna Wager
+[homepage](http://homes.soic.indiana.edu/scwager/)
+
+- Analysis of latency and glitches in app, airplane mode etc.
+Fischer's exact Test, Welch's 2-sample test, Correspondence analysis, 
+- ML based prediction using: device temperature, 
+-References
+  - [Estimation and inference of heterogeneous treatment effects](https://arxiv.org/pdf/1510.04342.pdf)
+    - At a high level, trees and forests can be thought of as nearest neighbor methods with an adaptive neighborhood metric. Distance metric is leaf proximity.
+  
+
+[Stefan Wager](https://web.stanford.edu/~swager/research.html)
+
+
+
+Instrumentation requirements:
+
+- Lightweight, low overhead
+- lock free , non-blocking algorithms
+- Precise time stamps
+- circular buffers.
+
+
+#### Other techniques
+lldb, gdb, ntsd, windbg
+Mac OS[Dtrace](https://www.bignerdranch.com/blog/hooked-on-dtrace-part-1/)
+Windows[ETW](https://msdn.microsoft.com/en-us/library/windows/desktop/bb968803(v=vs.85).aspx)
+
+### Nikolas Borrel
+[Harmonisation in modern rhythmic music using Hidden Markov models](http://www.wiley.com/WileyCDA/WileyTitle/productCd-0470510463.html)
+[Livetake](http://www.livetakeconcert.com/watch/plst/roskilde_playlist/12525FC9-0264-45C3-B906-9123F0AC2FF0)
+[Livetake](https://www.crunchbase.com/organization/livetake)
+
+
+
+
 # 11/26/2017
 [ Stone Aerospace ](http://stoneaerospace.com)
 
