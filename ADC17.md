@@ -400,11 +400,28 @@ builder.setSharingMOde(OBOE_SHARING_MODE_EXLUCIVE)
 - [semantic audio](http://www.semanticaudio.co.uk)
 - ["Semantic description of timbral transformations in music production"](http://dmtlab.bcu.ac.uk/ryanstables/ACMMM2016.pdf)
 
+### Ben Supper
+[Present and future improvements to MIDI](https://youtu.be/8xzA9sehSXc)
+- MIDI community hoping to standardize Protocols, Profiles, and Properties
 
+### Geert Bevin, Amos Gaynes
+[Designing and implementing embedded synthesizer UIs with JUCE](https://youtu.be/jq7zUKEcyzI)
 
+ [ MOOG SUB Phatty ](https://youtu.be/c0B8ftVkUac)
+ [ Geert Bevin ](http://gbevin.com)
 
+ - Projucer
+   +  Consistent grammer
+   +  Navigational widgets
+     *  Conceptually similar moves to minimize re-learning effort
+     *  Clarify, Simplify, Chunk, organize
+     *  Never make the user feel like they are building a ship in a bottle
+     *  Graphical prototyping of UI hardware
 
-
+- Automated Tests
+  + Sematic UI tests are relatively easy in JUCE using component identifiers
+  + public UnitTest
+  + [gitlab](https://about.gitlab.com)
 
 
 

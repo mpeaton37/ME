@@ -73,3 +73,24 @@ Review of Audio Recording
 
 ### More JUCE
 
+## 12/5/2017
+
+- [distortion modeling](https://ccrma.stanford.edu/~dtyeh/papers/DavidYehThesissinglesided.pdf)
+- [NGSpice](http://ngspice.sourceforge.net/screens.html)
+- [Pyspice](https://pyspice.fabrice-salvaire.fr/examples/diode/voltage-multiplier.html)
+- [AudioTK](https://github.com/mbrucher/AudioTK.git)
+- [CCRMA Stanford](https://ccrma.stanford.edu/papers)
+- [Numeric Integration in Structural Dynamics](http://people.duke.edu/~hpgavin/cee541/NumericalIntegration.pdf)
+
+
+## 12/7/2017
+
+- More JUCE notes
+- [teensy](https://www.pjrc.com/teensy/td_libs_Audio.html)
+
+
+
+
+
+
+
