@@ -88,6 +88,26 @@ Review of Audio Recording
 - More JUCE notes
 - [teensy](https://www.pjrc.com/teensy/td_libs_Audio.html)
 
+## 12/11/2017
+
+### Scott Sievert
+- [ NEXT: Crowdsourcing, machine learning and cartoons](https://youtu.be/blPjDYCvppY)
+- [scipy-next](tinyurl.com/scipy-next)
+- Adaptive sampling 
+  + quicksort nlog(n) analogy
+  + [New Yorker Cartoons](https://www.newyorker.com/cartoons/vote)
+
+### Drew Fustin
+- [Interrupted Time Series Experiments in Python](https://www.newyorker.com/cartoons/vote)
+- [Tom Augspurger](https://tomaugspurger.github.io)
+- Homogeneous Poisson Point Process
+  + $$ P(N(t)=n)=\frac{(\lambda t)^n )}{n!} \exp^(-\lambda t) $$
+  + $$ E[N(t)] = \lambda t $$
+- Nonhomogenous allows lambda to vary in time
+  + One approach: generate max rate and integrate define thinning function
+  +  Seasonal ARIMA
+  +  
+
 
 
 
