@@ -101,12 +101,57 @@ Review of Audio Recording
 - [Interrupted Time Series Experiments in Python](https://www.newyorker.com/cartoons/vote)
 - [Tom Augspurger](https://tomaugspurger.github.io)
 - Homogeneous Poisson Point Process
-  + $$ P(N(t)=n)=\frac{(\lambda t)^n )}{n!} \exp^(-\lambda t) $$
+  + $$ P(N(t)=n)=\frac{(\lambda t)^n }{n!} \exp^(-\lambda t) $$
   + $$ E[N(t)] = \lambda t $$
 - Nonhomogenous allows lambda to vary in time
   + One approach: generate max rate and integrate define thinning function
   +  Seasonal ARIMA
-  +  
+
+## 12/12/2017
+
+- [Deep Learning](https://docs.google.com/presentation/d/e/2PACX-1vQMZsWfjjLLz_wi8iaMxHKawuTkdqeA3Gw00wy5dBHLhAkuLEvhB7k-4LcO5RQEVFzZXfS6ByABaRr4/pub?start=false&loop=false&delayms=60000&slide=id.g2a19ddb012_0_490)
+- ["Densely connected convolutional networks"](https://arxiv.org/abs/1608.06993)
+- ["Unet: Convolutional networks for biomedical image segmentation"](https://arxiv.org/pdf/1505.04597.pdf)
+- ["Parallel WaveNet: Fast High-Fidelity Speech Synthesis."](https://arxiv.org/abs/1711.10433)
+- ["Learning Aligned Cross-Modal Representations from Weakly Aligned Data"](https://arxiv.org/abs/1607.07295)
+- ["Unsupervised Cross-domain image generation"](https://arxiv.org/abs/1611.02200)
+- ["Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks"](https://junyanz.github.io/CycleGAN/)
+
+## 12/14/2017
+["Parallel Inversion of Huge Covariance Matrices"](https://arxiv.org/abs/1312.1869)
+["Families of Algorithms Related to the Inversion of a Symmetric Positive Definate Matrix"](http://www.cs.utexas.edu/users/flame/pubs/toms_spd.pdf)
+["Convex Optimization for Big Data"](https://arxiv.org/pdf/1411.0972.pdf)
+["Iterative Methods for Computing Generalized inverses of Matrices"](http://pmf.ni.ac.rs/pmf/doktorati/doc/2012-04-27-ms.pdf)
+[ Sunway TaihuLight System Applications](http://engine.scichina.com/downloadPdf/rdbMLbAMd6ZiKwDco)
+["Undamentals of Linear Algebra and Optimization"](http://www.seas.upenn.edu/~cis515/linalg.pdf)
+[""](http://www.siam.org/pdf/news/637.pdf)
+
+## 12/18/2017
+
+### Image/Video Matting
+["Deep Image Matting"](https://arxiv.org/pdf/1703.03872.pdf)
+["Automatically Removing Backgrounds from Images"](https://news.developer.nvidia.com/ai-software-automatically-removes-the-background-from-images/)
+[ratings](http://videomatting.com/#rating)
+### Python
+[Inside Numpy: how it works and how we can make it better](https://youtu.be/fowHwlpGb34)
+  - PyPy supporting Numpy
+
+
+## 12/22/2017
+[IMSL](https://www.roguewave.com/products-services/imsl-numerical-libraries/c-libraries/features)
+[PLASMA](http://www.rce-cast.com/Podcast/rce-26-plasma-parallel-linear-algebra-software-for-multicore-architectures.html)
+[High-performance Cholesky factorization for GPU-only execution](High-performance Cholesky factorization for GPU-only execution)
+  - PLASMA tackles improving the expensive fork-join implementation in BLAS 3 by designing and using tile algorithms to achieve high performance.
+  -The difficult-to-parallelize tasks are the panel factorizations
+  - [MAGMA ](http://magma.maths.usyd.edu.au/magma/)
+  - schedules the difficult-to-parallelize tasks on CPUs, and thus is not directly applicable for GPU-only execution)
+  - [Level-3 Cholesky FActorization Routines](http://www.netlib.org/lapack/lawnspdf/lawn249.pdf)
+  - [Matrix Algebra on GPU](https://www.olcf.ornl.gov/wp-content/training/electronic-structure-2012/ORNL-ESWorkshop.pdf)
+    - Future Computer Systems: [ "AMD Fusion", "Nvidia Denver", "Intel MIC"]
+    - Software Follows Hardware: [Linpack:BLAS1,LAPACK:BLAS3, ScaLAPACK:PBLAS,PLASMA:[DAG,blocks,kernls],MAGMA:[hybrid schuduler, hybrid kernels]
+    - Compute-Communication gap is exponentially growing
+      + Processor speed improves 59%, memory bandwidth 23%, latency 5.5%
+
 
 
 
