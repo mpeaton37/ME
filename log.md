@@ -8,7 +8,8 @@ alsa
 
 ## JUCE
 [ ADC017 videos ](https://www.youtube.com/channel/UCaF6fKdDrSmPDmiZcl9KLnQ/videos)
-iCloud says it's full... it isn't.  Time suck
+
+[ADC17](./ADC17.md)
 
 # 11/16/2017
 ### ML review
@@ -141,6 +142,7 @@ Review of Audio Recording
 [IMSL](https://www.roguewave.com/products-services/imsl-numerical-libraries/c-libraries/features)
 [PLASMA](http://www.rce-cast.com/Podcast/rce-26-plasma-parallel-linear-algebra-software-for-multicore-architectures.html)
 [High-performance Cholesky factorization for GPU-only execution](High-performance Cholesky factorization for GPU-only execution)
+  
   - PLASMA tackles improving the expensive fork-join implementation in BLAS 3 by designing and using tile algorithms to achieve high performance.
   -The difficult-to-parallelize tasks are the panel factorizations
   - [MAGMA ](http://magma.maths.usyd.edu.au/magma/)
@@ -151,6 +153,62 @@ Review of Audio Recording
     - Software Follows Hardware: [Linpack:BLAS1,LAPACK:BLAS3, ScaLAPACK:PBLAS,PLASMA:[DAG,blocks,kernls],MAGMA:[hybrid schuduler, hybrid kernels]
     - Compute-Communication gap is exponentially growing
       + Processor speed improves 59%, memory bandwidth 23%, latency 5.5%
+
+## 12/27/2017
+[cpp-annotated](https://blog.jetbrains.com/clion/2017/12/cpp-annotated-sep-dec-2017/)
+
+#### Audio Studio Research
+[muse box](http://www.museresearch.com/products/index.php)
+[UAD Satellite](https://www.uaudio.com/uad-accelerators/uad2-satellite-usb.html)
+
+## 12/28/2017
+[python magic](https://rszalski.github.io/magicmethods/)
+
+## 12/29/2017
+####Machine Learning
+##### People
+
+[Emmanuel Candes](https://statweb.stanford.edu/~candes/)
+  
+  - [Stats 330 "And Introduction to Compressive Sensing](https://statweb.stanford.edu/~candes/stats330/index.shtml)
+    + [Convex Optimization](http://techbus.safaribooksonline.com/book/math/9781107385924/firstchapter#X2ludGVybmFsX0h0bWxWaWV3P3htbGlkPTk3ODExMDczODU5MjQlMkZwMjhfNV9odG1sJnF1ZXJ5PQ==)
+    + 
+
+[David Blei](http://www.cs.columbia.edu/~blei/)
+[Tamara Broderick](http://www.tamarabroderick.com)
+[Daniel Hsu](http://www.cs.columbia.edu/~djhsÂu/)
+[Frank Wood](http://www.robots.ox.ac.uk/~fwood/)
+[Marco Cuturi](http://marcocuturi.net)
+[Finale Doshi-Velez](https://www.seas.harvard.edu/directory/finale)
+[Sergey Levine](https://people.eecs.berkeley.edu/~svlevine/)
+[Neil Lawrence](http://inverseprobability.com)
+[Ryan Adams](http://people.seas.harvard.edu/~rpa/)
+[David Warde-Farley](http://www-etud.iro.umontreal.ca/~wardefar/)
+[Hugo Larochelle](http://www.dmi.usherb.ca/~larocheh/index_en.html)
+
+
+[Elad Hazan](https://www.cs.princeton.edu/~ehazan/)
+  
+  - [Optimization for Machine Learning](https://www.youtube.com/watch?v=f0qQsz4-o68&feature=youtu.be)
+  - 
+
+   [David Pfau](http://www.columbia.edu/~dbp2112/)
+[Mu Li](http://www.cs.cmu.edu/~muli/)
+[Martin Abadi](https://research.google.com/pubs/abadi.html)
+[Derek Murray](https://research.google.com/pubs/DerekMurray.html)
+
+
+####INFOSEC
+
+[Blogs to Read](https://digitalguardian.com/blog/top-50-infosec-blogs-you-should-be-reading)
+
+[INFOSEC](https://en.wikipedia.org/wiki/Information_security)
+
+
+## 12/29/2017
+
+[Accelerating Your Algorithms with Python and MKL](https://www.youtube.com/watch?time_continue=13&v=frOiCeljcsY)
+
 
 
 
