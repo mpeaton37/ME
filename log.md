@@ -209,7 +209,29 @@ Review of Audio Recording
 
 [Accelerating Your Algorithms with Python and MKL](https://www.youtube.com/watch?time_continue=13&v=frOiCeljcsY)
 
+- Intel Python performance much better than openBLAS on Xeon Phi processors
+- Intel Vtune
+- [NumExpr](http://numexpr.readthedocs.io/en/latest/user_guide.html)
+-  Native C++ vs Python variants on Black Scholes { C++:4800,Cython:3400,NumExp:1200, Numpy:440 } MOPS 
+  +  Compilation with Intel Compiler
+-  [DAAL](https://software.intel.com/en-us/Intel-daal?cid=sem43700010409076506&intel_term=intel+daal&gclid=CjwKCAiAj53SBRBcEiwAT-3A2CoksapgyRmw31tHZeHRpCgxYifzrhYsp2mwBh4pzz6VdnAnN_GkeBoCfWcQAvD_BwE&gclsrc=aw.ds)
+-  [DAAL4Py](https://software.intel.com/en-us/forums/intel-data-analytics-acceleration-library/topic/746317)
+- [Daal on github](https://github.com/daaltces/pydaal-getting-started)
 
+## 1/02/2018
+
+[WaveNet](https://arxiv.org/pdf/1609.03499.pdf)
+[Toward Data Science](https://towardsdatascience.com/a-deeper-understanding-of-nnets-part-1-cnns-263a6e3ac61)
+
+[Le Cunn](http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf)
+
+[Urban Demographics](https://urbandemographics.blogspot.com.br/2017/12/the-most-visited-posts-of-2017.html)
+
+## 1/03/2018
+[Jim Cruchfield, Complexisty Science Center](http://csc.ucdavis.edu/~chaos/)
+  - [Why Information](http://csc.ucdavis.edu/~chaos/Talks/COS_Singapore.pdf)
+  - [ Statistical Physics of Deep Learning](https://youtu.be/7KCWcx-YIRI)
+  - [ Statistical Physics of Deep Learning.pdf]( https://www.msri.org/workshops/796/schedules/20463/documents/2705/assets/24735)
 
 
 
