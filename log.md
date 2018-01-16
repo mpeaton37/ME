@@ -9,7 +9,7 @@ alsa
 ## JUCE
 [ ADC017 videos ](https://www.youtube.com/channel/UCaF6fKdDrSmPDmiZcl9KLnQ/videos)
 
-[ADC17](./ADC17.md)
+[ADC17 notes](ADC17.md)
 
 # 11/16/2017
 ### ML review
@@ -219,6 +219,14 @@ Review of Audio Recording
 - [Daal on github](https://github.com/daaltces/pydaal-getting-started)
 
 ## 1/02/2018
+[Audio Processing](https://towardsdatascience.com/the-promise-of-ai-in-audio-processing-a7e4996eb2ca)
+
+- Selective Noise Cancelation
+- Hi-fi audio reconstruction
+- Analog audio emulation
+- Speech processing
+- Improved spatial simulations
+
 
 [WaveNet](https://arxiv.org/pdf/1609.03499.pdf)
 [Toward Data Science](https://towardsdatascience.com/a-deeper-understanding-of-nnets-part-1-cnns-263a6e3ac61)
@@ -228,14 +236,58 @@ Review of Audio Recording
 [Urban Demographics](https://urbandemographics.blogspot.com.br/2017/12/the-most-visited-posts-of-2017.html)
 
 ## 1/03/2018
-[Jim Cruchfield, Complexisty Science Center](http://csc.ucdavis.edu/~chaos/)
+[Jim Cruchfield](http://csc.ucdavis.edu/~cmg/), [Complexisty Science Center](http://csc.ucdavis.edu/~chaos/)
+[@SantaFe](https://www.santafe.edu/people/profile/james-p-crutchfield)
+ 
   - [Why Information](http://csc.ucdavis.edu/~chaos/Talks/COS_Singapore.pdf)
+  - [Complexity of Simplicity slides James Crutchfield]()
   - [ Statistical Physics of Deep Learning](https://youtu.be/7KCWcx-YIRI)
   - [ Statistical Physics of Deep Learning.pdf]( https://www.msri.org/workshops/796/schedules/20463/documents/2705/assets/24735)
+- [Entropy](http://www.cmp.caltech.edu/~mcc/Chaos_Course/Lesson8/Entropy.pdf)
+- [Computational Mechanics of Input-Output Processes](https://escholarship.org/content/qt5p4164x0/qt5p4164x0.pdf)
+- [Information Transfer](https://arxiv.org/pdf/nlin/0001042)
+- [Partial Info (Williams Beer)](https://pdfs.semanticscholar.org/ea5d/983f480e1b2be06e52400e8721830b4ef15c.pdf)
+    + Synergistic Informations
+- [14](https://www.infoamerica.org/documentos_word/shannon-wiener.htm#_ftn14)
+
+[![Everything Is AWESOME](http://i.imgur.com/Ot5DWAW.png)](https://youtu.be/StTqXEQ2l-Y?t=35s " Everything Is AWESOME")
 
 
+## 1/04/2018
+
+- [Rabbit MQ in Action]()
+  + screenshot
+- [Mahout in Action]()
+  + screenshot
+- [Dynamic Bayes (Murphy)](http://www.cs.ubc.ca/~murphyk/papers/dbntalk.pdf)
+
+## 1/05/2018
+[ Thomas Virtanen](http://www.cs.tut.fi/~tuomasv/publications.html)
+
+- [Stephen Boyd](https://web.stanford.edu/~boyd)
+  + [Convex Optimization Notes](https://web.stanford.edu/~boyd/cvxbook/bv_cvxslides.pdf)
+
+## 1/09/2018
+
+[Machine Learing](http://techbus.safaribooksonline.com/book/programming/machine-learning/9780128015223/chapter-18-neural-networks-and-deep-learning/s0075_html_4?percentage=&reader=html#X2ludGVybmFsX0h0bWxWaWV3P3htbGlkPTk3ODAxMjgwMTUyMjMlMkZzMDAxMF9odG1sXzE0JnF1ZXJ5PQ==)
+
+## 1/10/2018
+http://cs.brown.edu/~jes/book/pdfs/ModelsOfComputation_Chapter8.pdf
+http://foresthillshs.enschool.org/ourpages/auto/2011/11/2/74617344/Number%20Theory%20and%20Music.pdf
+
+[ porpouise looking for ]( http://www.math.psu.edu/cao/ )
+[ relaxor ferromagnetic ](https://www.ncbi.nlm.nih.gov/pubmed/18276540)
 
 
+## 1/11/2017
+[Mind MOdeling](https://mindmodeling.org)
+
+## 1/12/2017
+[Hinton Git](https://github.com/khanhnamle1994/neural-nets)
 
 
+## 1/15/2017
+[Adam](https://arxiv.org/abs/1412.6980)
+[ Torch ](http://torch.ch)
+  
 
