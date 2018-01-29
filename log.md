@@ -1,4 +1,4 @@
-## 08/28/2017
+    ## 08/28/2017
 Lord Huron rules...
 alsa
 
@@ -279,15 +279,59 @@ http://foresthillshs.enschool.org/ourpages/auto/2011/11/2/74617344/Number%20Theo
 [ relaxor ferromagnetic ](https://www.ncbi.nlm.nih.gov/pubmed/18276540)
 
 
-## 1/11/2017
+## 1/11/2018
 [Mind MOdeling](https://mindmodeling.org)
 
-## 1/12/2017
+## 1/12/2018
 [Hinton Git](https://github.com/khanhnamle1994/neural-nets)
 
 
-## 1/15/2017
+## 1/15/2018
 [Adam](https://arxiv.org/abs/1412.6980)
 [ Torch ](http://torch.ch)
+
+## 1/19/2018
+[Cpp notes](Cppnotes.md)
+
+## 1/22/2018
+ 
+[Godbolt on Spectre and Meltdown](https://www.youtube.com/watch?v=IPhvL3A-e6E)
+
+- Meltdown
+  + Effects mostly Intel, some ARM
+  + access any physical RAM
+  + somewhat straight forward software fix
+- Spectre
+  + access RAM via privileged process
+  + can work from JS
+  + all modern CPU types affected
+  + highly involved fixes
+- KAISER patches change OS so that kernel memory is not mapped into every process.
+- *retpoline* for indirect jumps
+- LFENCE after bounds checks
+- \mucode update
+
+[Daniel Gruss, Microarchitectural Incontenence](https://www.youtube.com/watch?v=cAWmNp3Ukqk)
+[cache_template_attacks](https://github.com/IAIK/cache_template_attacks)
+
+
+## 1/25/2018
+
+- [Python Design Patterns](http://techbus.safaribooksonline.com/book/programming/python/9781783989324/firstchapter#X2ludGVybmFsX0h0bWxWaWV3P3htbGlkPTk3ODE3ODM5ODkzMjQlMkZjaDAzczAyX2h0bWwmcXVlcnk9)
+- Factory, Builder, Prototype, Adaptor (Grok, Traits), 
+
+## 1/26/2018
+
+[parallel algorithms](https://www.cs.cmu.edu/~guyb/papers/BM04.pdf)
+[Parallel Algorithms come of age](https://www.cs.cmu.edu/~guyb/papers/Qatar17.pdf)
+
+  - Three models that characterize a network in terms of its latency and bandwidth are the Postal model [14], the Bulk-Synchronous Parallel (BSP) model [85], and the LogP model [29].
+  - Because there are so many different ways to organize parallel computers, and hence to model them, it is difficult to select one multiprocessor model that is appropriate for all machines. The alternative to focusing on the machine is to focus on the algorithm.
+  - An algorithm’s work W is the total number of operations that it performs; its depth D is the longest chain of dependencies among its operations. We call the ratio P = W/D the parallelism of the algorithm.
+  - Graph problems are often difficult to parallelize since many standard sequential graph techniques, such as depth-first or priority-first search, do not parallelize well.
+  - If l = m = n, (direct dense matrix multiplication) does O(n^s3) work and has depth O(logn)
+  - When using Gauss-Jordan elimination, two of the three nested loops can be parallelized, leading to an algorithm that runs with O(n3) work and O(n) depth.
+  - Quicksort P = O(nlogn)/O(logn^2) = O(n/logn)
   
+
 
