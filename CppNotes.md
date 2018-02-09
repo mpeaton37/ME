@@ -1,0 +1,52 @@
+[Old notes](https://docs.google.com/document/d/1ZkNYxt-suCA4CFmzgXMdQojluI8TNiaJNhgTQcdqcOc/edit#)
+
+
+[Bryce Adelstein Lelback](bryce@cppcon.org)
+[An Introduction to C++17 via Inspiring examples](https://youtu.be/fI2xiUqqH3Q)
+ 
+
+Herb Sutter cpp 2017
+- String_view(
+- [Spaceship operator paper](http://open-std.org/JTC1/SC22/WG21/docs/papers/2017/p0515r0.pdf)
+- strcmp() in C
+https://wg21.link
+
+[Modern C++](http://techbus.safaribooksonline.com/book/programming/cplusplus/9781491908419/firstchapter#X2ludGVybmFsX0h0bWxWaWV3P3htbGlkPTk3ODE0OTE5MDg0MTklMkZ0ZXJtaW5vbG9neV9hbmRfY29udmVudGlvbnNfaHRtbCZxdWVyeT0=)
+
+- Copies of rvalues are generally move constructed, while copies of lvalues are usually copy constructed.
+
+#### Item 1: Understand template type deduction
+
+- During template type deduction, arguments that are references are treated as non-references, i.e., their reference-ness is ignored.
+- When deducing types for universal reference parameters, lvalue arguments get special treatment.
+- When deducing types for by-value parameters, const and/or volatile arguments are treated as non-const and non-volatile.
+- During template type deduction, arguments that are array or function names decay to pointers, unless they’re used to initialize references.
+
+#### Item 2: Understand auto type deduction
+
+- auto type deduction is essentiall the same as template type deduction
+- The treatment of braced initializers is the only way in which auto type deduction and template type deduction differ.
+```cpp 
+auto x1 = 27;
+auto x2(27);
+auto x3 = { 27 };
+auto x4{ 27 };
+typeid(x4).name()
+```
+- The second two declare a variable of type std::initializer_list<int> containing a single element with value 27! 
+- auto assumes that a braced initializer represents a std::initializer_list, but template type deduction doesn’t.
+- auto in a function return type or a lambda parameter implies template type deduction, not auto type deduction.
+
+#### Item 3: Understand decltype
+
+- decltype almost always yields the type of a variable or expression without any modifications.
+- For lvalue expressions of type T other than names, decltype always reports a type of T&.
+- C++14 supports decltype(auto), which, like auto, deduces a type from its initializer, but it performs the type deduction using the decltype rules
+
+#### Item 4: Know how to view deduced types
+- Deduced types can often be seen using IDE editors, compiler error messages, and the Boost TypeIndex library.
+- The results of some tools may be neither helpful nor accurate, so an understanding of C++’s type deduction rules remains essential.
+
+#### Item 5: Prefer auto to explicit type definitions
+-
+

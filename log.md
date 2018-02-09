@@ -333,5 +333,45 @@ http://foresthillshs.enschool.org/ourpages/auto/2011/11/2/74617344/Number%20Theo
   - When using Gauss-Jordan elimination, two of the three nested loops can be parallelized, leading to an algorithm that runs with O(n3) work and O(n) depth.
   - Quicksort P = O(nlogn)/O(logn^2) = O(n/logn)
   
+## 1/29/2018
+
+[Eric Humphrey](https://steinhardt.nyu.edu/marl/people/humphrey)
+
+- [ Four Key](https://pdfs.semanticscholar.org/5df1/8ba8d4be6daf3ec2c3d617ac2fae9231b35a.pdf)
+- Constant Q -> HCDF, peak picking -> Chroma segmentation and averaging -> Chord Recognizer
+
+[4GENNOW tax structures](https://4gennow.com/resources/)
+
+- Scedule C gets audited more often
+- S corp
+  + Income tax paid by individual share holders
+- C corp Corporate tax rate is reduced to a maximum rate of 21%
+  + Tax Cuts and jobs act of 2017
+  + 20% deduction of "qualified business income" 
+
+[SOU Address]()
+
+
+## 2/1/2018
+[Integer programming]()
+[PuLP](https://pypi.python.org/pypi/PuLP
+[git PuLP](https://github.com/coin-or/pulp)
+[COIN CBC](https://projects.coin-or.org/Cbc)
+[git CBC](https://github.com/coin-or/Cbc)
+[nauty traces](http://pallini.di.uniroma1.it)
+
+[HMM again](http://cs.brown.edu/research/ai/dynamics/tutorial/Documents/HiddenMarkovModels.html)
+
+## 2/9/2018
+
+[MARL](https://steinhardt.nyu.edu/marl/publications#)
+[ACE](https://pdfs.semanticscholar.org/5df1/8ba8d4be6daf3ec2c3d617ac2fae9231b35a.pdf)
+[music21](http://web.mit.edu/music21/)
+[Warp](http://www.cs.cmu.edu/afs/cs/project/iwarp/archive/iWarp-papers/spaa92-mesh-sorting.ps)
+[WARP systolic](https://en.wikipedia.org/wiki/WARP_(systolic_array))
+[AD9371](http://www.analog.com/en/products/rf-microwave/integrated-transceivers-transmitters-receivers/wideband-transceivers-ic/AD9371.html#product-overview) 
+[l-diversity](https://en.wikipedia.org/wiki/L-diversity)
+[Jetson TX-2](https://developer.nvidia.com/embedded/buy/jetson-tx2)
+
 
 
