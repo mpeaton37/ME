@@ -374,4 +374,34 @@ http://foresthillshs.enschool.org/ourpages/auto/2011/11/2/74617344/Number%20Theo
 [Jetson TX-2](https://developer.nvidia.com/embedded/buy/jetson-tx2)
 
 
+## 2/13/2018
+
+[ Marathon ](https://mesosphere.github.io/marathon/)
+[ MESOS ](http://mesos.apache.org)
+[ DC/OS ](https://dcos.io)
+
+[isophonics](http://isophonics.net/content/reference-annotations)
+[ OMRAS2 ](http://www.matthiasmauch.net/_bilder/late-breaking-C4DM.pdf)
+[ FPGA ML](http://www.eproductalert.com/digitaledition/embeddedsystems/2017/12/embedded_systems_engineering_december_2017.pdf)
+[ DO-254 ](https://en.wikipedia.org/wiki/DO-254)
+[ Linear Programming ](http://techbus.safaribooksonline.com/9781466552647/9781466578609_c02_htm)
+[ HMM ](http://hmmlearn.readthedocs.io/en/stable/tutorial.html#training-hmm-parameters-and-inferring-the-hidden-states)
+[ Island Algorithm](https://en.wikipedia.org/wiki/Island_algorithm)
+[ Forward Backward Algorithm](https://en.wikipedia.org/wiki/Forward–backward_algorithm#RussellNorvig10)
+[ Bitonic Sorter ](https://en.wikipedia.org/wiki/Bitonic_sorter)
+[ Pulp ](https://github.com/coin-or/pulp/tree/master/src/pulp)
+[ hmmlearn ](http://hmmlearn.readthedocs.io/en/stable/tutorial.html#training-hmm-parameters-and-inferring-the-hidden-states)
+[ parallel algorithms ](https://www.cs.cmu.edu/~guyb/papers/BM04.pdf)
+[ backdrop systolic ](https://medium.com/@yaroslavvb/backprop-and-systolic-arrays-24e925d2050)
+[ face recognition ](https://pypi.python.org/pypi/face_recognition)
+[ compressive systems ](https://statweb.stanford.edu/%7Ecandes/stats330/index.shtml)
+[ dlib ](https://pypi.python.org/pypi/dlib)
+[ embedded ](http://www.eproductalert.com/digitaledition/embeddedsystems/2017/12/embedded_systems_engineering_december_2017.pdf)
+
+## 2/15/2018
+
+[chip](http://news.mit.edu/2018/chip-neural-networks-battery-powered-devices-0214)
+[ dario gil](Dario Gil)
+[ in-memory computation](https://pdfs.semanticscholar.org/4bb5/2ae9d53277e9eec35fc658a14960a5251ede.pdf)
+
 
