@@ -1,4 +1,4 @@
-    ## 08/28/2017
+## 08/28/2017
 Lord Huron rules...
 alsa
 
@@ -49,7 +49,8 @@ alsa
 - ROC := Sensitivity , 1 - Specificity
 - Early Stopping Geoffry Hinton
 Review of Audio Recording
-[ Alan Parsons Video ]( )
+
+[ Alan Parsons Video ]( https://www.artandscienceofsound.com    )
 - Vocal Comping
 - Aritha Franklin tape distortion
 
@@ -403,5 +404,101 @@ http://foresthillshs.enschool.org/ourpages/auto/2011/11/2/74617344/Number%20Theo
 [chip](http://news.mit.edu/2018/chip-neural-networks-battery-powered-devices-0214)
 [ dario gil](Dario Gil)
 [ in-memory computation](https://pdfs.semanticscholar.org/4bb5/2ae9d53277e9eec35fc658a14960a5251ede.pdf)
+
+## 2/21/2018
+
+[ peptide resonance ](http://www.jbc.org/content/193/1/397.long)
+[ capsid ](https://en.wikipedia.org/wiki/Capsid)
+[ structural biology ](https://en.wikipedia.org/wiki/Structural_biology)
+[ acoustic parameters ](http://www.sengpielaudio.com/RelationshipsOfAcousticQuantities.pdf)
+
+## 2/23/2018
+
+[ acoustic pumping ](https://arxiv.org/pdf/1707.04276.pdf)
+[ Tensor Comprehensions ](https://arxiv.org/pdf/1802.04730.pdf)
+[ ATen ](https://github.com/zdevito/ATen)
+[ Halide ](https://github.com/halide/Halide)
+
+## 2/26/2018
+
+[ Memristor ](https://spectrum.ieee.org/nanoclast/semiconductors/materials/molybdenum-disulfide-helps-tune-memristors)
+[ Hersam Group ](http://www.hersam-group.northwestern.edu)
+- Analog Analogy - any analogy can analagously simulate (compute)
+[ LOIHI ](https://newsroom.intel.com/editorials/intels-new-self-learning-chip-promises-accelerate-artificial-intelligence/)
+
+
+## 3/1/2018
+
+[ Cognitive Systems Engineering ](https://books.google.com/books?id=ASO7BQAAQBAJ&pg=PA47&lpg=PA47&dq=Annelise+Mark+Petjersen&source=bl&ots=X535Guf8gM&sig=k460FlMRV2HOhTWVeryolODEXsc&hl=en&sa=X&ved=0ahUKEwi8q6eOrMvZAhVDtlkKHQ56CuwQ6AEIQDAE#v=onepage&q=Annelise%20Mark%20Petjersen&f=false)
+
+[ VIHO ](http://www.it.uu.se/research/project/viho#deltagare)
+[ Mark Ackerman ](https://www.si.umich.edu/people/mark-ackerman)
+[ Hala Annabi ](https://ischool.uw.edu/people/faculty/profile/hpannabi)
+[ It's FASSE ](https://link.springer.com/article/10.1023/A:1009895915332)
+[ Cognitive Systems Research ](https://www.sciencedirect.com/journal/cognitive-systems-research)
+
+
+## 3/5/2018
+
+[ cognitive systems](https://www.mitre.org/sites/default/files/pdf/05_1361.pdf)
+[ CSE ](https://pdfs.semanticscholar.org/ca96/1aa540819e0783514ab58bbdf035c877df74.pdf)
+[ Angelica Peer ](https://scholar.google.com/citations?user=5uDjPl0AAAAJ&hl=th)
+[ Robert Jenke ](https://scholar.google.com/citations?user=-sk9ynkAAAAJ&hl=de)
+[ Deep Slide share ](https://www.slideshare.net/TessFerrandez/notes-from-coursera-deep-learning-courses-by-andrew-ng)
+
+
+## 3/6/2018
+
+## 3/18/2018
+
+[ google cloud ](https://software.seek.intel.com/Edge_Devices_Webinar_Reg)
+
+
+## 3/21/2018
+
+[SANS](https://www.sans.org/dfppclp?utm_campaign=NA-Forensics-Digital-Search&utm_medium=cpc&utm_source=Google&utm_content=hands-on-ad&utm_term=P)
+[Audio Forensics](https://www.wired.com/2007/10/audio-forensics-experts-reveal-some-secrets/)
+
+- DCLive Forensics
+- aural steganography
+
+[Owen Forensics](http://owenforensicservices.com/about.html)
+https://www.youtube.com/watch?v=NRRzs0bB0a0&feature=youtu.be
+[Brian King](https://www.linkedin.com/in/mrbrianking/)
+[ Paris Smaragdis](http://paris.cs.illinois.edu)
+[ SiSEC 2013 ](http://sisec.wiki.irisa.fr/tiki-index165d.html?page=Professionally+produced+music+recordings)
+[ SiSEC 2018](https://sisec.inria.fr)
+[ SiSEC MUS ](https://www.sisec17.audiolabs-erlangen.de/#/)
+
+
+
+## 3/25/2018
+
+CompTIA Security+ 
+[Sari Greene](https://www.linkedin.com/in/sarigreene/)
+
+- Module 1
+  + Lesson 1: Analyze Indicators of Compromise and Determine Malware
+    * 1.1 Types of Malware
+      - Viruses
+        + Types: bootsector, file infector, companion, macro virus
+        + Mechanism: stealth, memory resident, armored, polymorphic, metamorphic
+      - Worms
+        + Self replicating, use network transport,
+        + Types: Crypto variant/Ransomware, Command and Control, Advanced Persistant Threat, Bot/ zombie
+      - Trojans
+        + Malicious code disguised as a legitamate application
+        + Types:  RAT, Backdoor, Downloader, Keylogger
+      - Rootkit
+        + Firmware, Kernel, Persistant, Application, Library
+      - Spyware
+        + Keylogger, Monitors, Adware, Tracking Cookies, Click Fraud
+
+    * 1.2 Indicators of Compromise
+    * 1.3 Security in Action
+
+
+
+
 
 

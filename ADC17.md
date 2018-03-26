@@ -13,10 +13,10 @@
 - [ topological ](https://topologica.co/)
 
 ### Andreas Gustafsson
-- Space-Time transforms
+- [Space-Time transforms](https://youtu.be/ONJVJBmFiuE)
   - [ Velasco et. al. Constructing Constant Q](https://www.univie.ac.at/nonstatgab/pdf_files/dohogve11_amsart.pdf)
   - [ Holighaus N et. al. "A Frameowrk for invertible..."](http://www.univie.ac.at/nonstatgab/pdf_files/dogrhove12_amsart.pdf)
-  - *Gaborator library*
+  - [Gaborator library](https://gaborator.com)
 
 ### [Angus Hewlett ](https://www.youtube.com/watch?v=cn-5k8fm_u0)
 - [FXpansion](https://www.fxpansion.com/)
@@ -422,7 +422,6 @@ builder.setSharingMOde(OBOE_SHARING_MODE_EXLUCIVE)
   + Sematic UI tests are relatively easy in JUCE using component identifiers
   + public UnitTest
   + [gitlab](https://about.gitlab.com)
-
 
 
 
