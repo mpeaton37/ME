@@ -473,7 +473,10 @@ https://www.youtube.com/watch?v=NRRzs0bB0a0&feature=youtu.be
 
 
 ## 3/25/2018
-
+https://link.springer.com/chapter/10.1007/978-3-319-53547-0_31
+http://www.ti.com/product/TMS320C5534
+[ Interior Point Methods](https://people.kth.se/~andersf/doc/sirev41494.pdf)
+CEH http://techbus.safaribooksonline.com/9780134677552
 CompTIA Security+ 
 [Sari Greene](https://www.linkedin.com/in/sarigreene/)
 
@@ -495,10 +498,143 @@ CompTIA Security+
         + Keylogger, Monitors, Adware, Tracking Cookies, Click Fraud
 
     * 1.2 Indicators of Compromise
+      - specific artifact, virus signature, IP address, malicious URL, command and control connection, file changes
+      - Malware Modus Operandi
+        + Exploit->Masquerade->Polymorphism->Callback->Accomplish
     * 1.3 Security in Action
+      - AV, anti-malware, Post-infection scan, Log inspection, Malware Intelligence, Malware Verification, Reverse Engineering
+      - 
 
 
+## 03/28/2018
 
+- [ Phase reconstruction ](https://pdfs.semanticscholar.org/ade8/d1511a61d78948bb0d43e207593389935421.pdf?%5C_ga=2.229355228.1725061846.1494658711-1308334183.1494658711)
+- [Intel persistant memory](https://software.intel.com/en-us/videos/the-nvm-programming-model-persistent-memory-programming-series)
+
+
+## 04/06/2018
+[Tensorflow dev summit](https://www.tensorflow.org/dev-summit/)
+- pre-trained models, pods etc.
+- [ETL for tensorflow](www.tensorflow.org/programmers_guide/datasets)
+- [Eager Mode](www.tensorflow.org/programmers_guide/eager)
+
+## 04/20/2018
+- Fuel Economy & Gas Emission Standards for Vehicles
+  + 95 RON 3% increase at what cost?
+- Transportation Infrastructure
+  + Kyle Schneweis - Nebraska Transportation Department Director
+  + Dan Gilmartin - D- score on roads, this year particularly bad.
+  + Sen. Gary Peters - Michigan infrastructure pipes, internet, etc. problems.
+  + 
+- Federal Marijuanna Policy (SAM - Smart Approaches to Marijuanna)
+  + Kevin Sabat - Federal Marijuanna Policy
+  + Jake Nelson - AAA Traffic Advocacy and Research Director
+  + Arthur Burnett - DC Superior Court Judge
+  + Dr. Roneet Lev - Scripps Mercy Hospital (San Diego)
+  + Christine Miller - Psychosis and marijuanna
+  + Patrick Kennedy - Former Representative from Rhode Island
+- 2019 Defense Budget Request
+  + Nuclear Triad 
+  + Heather Wilson - USAF Secretary
+    * Joint Cyber Warfighting
+    * Space Enterprise Consortium
+  + Rep. Niki Tsongas - Dem Massachusetts
+  + Mark Esper - Army Secretary -> [U.S. Army Futures Command](https://www.army.mil/article/197886/us_army_futures_command_to_reform_modernization_says_secretary_of_the_army)
+  + Richard Spencer - Naval Secretary
+  + Bradley Byrne - R. Alabama mad about LCS production
+  + Seth Moulton - D. Massachusetts -> AI, Cyber, anti-satellite, 
+  + Martha McSalley - R. Arizona -> A10 sustainment, Apache ANG decommission/transfer to Active Duty.
+  + Trent Kelley -> R. Missisipi ANG more experienced and more qualified.  JSTARS 2025-2035 replacement capability gap.
+  + Mike Turner - R. Ohio -> 
+  + Don Bacon - R. Nebraska -> Compass Call 
+- Housing and Urban Development  
+  + 16% Cuts  Sherod Brown vs. Ben Carson. down and dirty.  
+- Telecommunications Policy
+  + David Redl - NTIA -> DoD operations <- Spectrum Relocation Act
+    * [David Redl](https://www.ntia.doc.gov/page/david-j-redl)
+  + Tom Power CTIA Wireless Assocation
+  + https://defensesystems.com/articles/2018/03/01/ntia-dod-spectrum-5g.aspx
+  
+
+## 4/25/2018
+- [ 80 Data Science Books ](https://www.octoparse.com/blog/80-best-data-science-books-that-are-worthy-reading/)
+- [ linux kernel development](http://techbus.safaribooksonline.com/book/operating-systems-and-server-administration/linux/9781785883057/mastering-linux-kernel-development/48161f75_547b_4e73_98e6_384ba552669d_xhtml?query=((linux+kernel+development))#X2ludGVybmFsX0h0bWxWaWV3P3htbGlkPTk3ODE3ODU4ODMwNTclMkY3MWI2NTUyZV9iNzAwXzQ2NzVfYjEzNV81M2I3Zjg5OTc0NzdfeGh0bWwmcXVlcnk9KChsaW51eCUyMGtlcm5lbCUyMGRldmVsb3BtZW50KSk=)
+
+
+## 5/1/2018
+- [Professional C++](http://techbus.safaribooksonline.com/9781119421306/head_2_67_html?percentage=0&reader=html#X2ludGVybmFsX0h0bWxWaWV3P3htbGlkPTk3ODExMTk0MjEzMDYlMkZoZWFkXzJfNzBfaHRtbCZxdWVyeT0oKGRvaW5nJTIwZGF0YSUyMHNjaWVuY2UpKQ==)
+- Abstraction and Reuse
+- [typname or class](https://stackoverflow.com/a/213135)
+- Designing an Exposed Interface
+  + Consider the audience
+- Designing Reusable Code
+  + Use Abstraction, Reduce Dependencies, Use Templates
+- Design for Extensibility, Closed for Modification
+-  Dynamic memory: string class, vector container, unique_ptr, shared_ptr, 
+
+
+## 5/6/2018
+http://techbus.safaribooksonline.com/book/programming/cplusplus/9781484218761/firstchapter#X2ludGVybmFsX0h0bWxWaWV3P3htbGlkPTk3ODE0ODQyMTg3NjElMkZhNDE3NjQ5XzFfZW5fYm9va2Zyb250bWF0dGVyX29ubGluZXBkZl9odG1sJnF1ZXJ5PQ==
+
+
+## 5/31/2018
+- Introduction to Persistent Memory Configuration and Analysis Tool Webinark
+- [pmdk](https://github.com/pmem/pmdk)
+-  [pmemm](http(software.intel.com/pmemm)
+- [overview](https://software.intel.com/en-us/articles/introduction-to-programming-with-persistent-memory-from-intel)
+- [nvdimm](https://en.wikipedia.org/wiki/NVDIMM)
+
+## 6/04/2018
+- [Dask webinar ]( http://bit.ly/2s5Zt4v )
+- [Matt Rocklin](http://matthewrocklin.com/blog/work/2017/02/07/dask-sklearn-simple)
+- scale to larger than memory data
+- [dask setup](https://dask.pydata.org/en/latest/setup.html)
+- [dask yarn](https://github.com/dask/dask-yarn)
+
+- Apple Keynote
+  + USDZ - AR Augmented Reality 
+  + Adobe Creative Cloud -> AR
+  + Apple Measure
+
+- [ TDS - Human Like ML](https://towardsdatascience.com/human-like-machine-hearing-with-ai-1-3-a5713af6e2f8)
+  + Cochlear Nucleus -> Superior Olive -> Lateral Lemniscus -> Inferior Colliculus -> Medial Geniculate
+  + [ J.J. Eggermont ](J. J. Eggermont, “Between sound and perception: reviewing the search for a neural code.,” Hear. Res., vol. 157, no. 1–2, pp. 1–42, Jul. 2001.)
+  +   “chopper” (stellate) neurons
+  
+
+  ## 06/12/2018
+
+  [10 Core Guidelines You Need to Start Using Now](https://www.youtube.com/watch?v=XkDEzfpdcSg)
+  - [Kate Gregory](http://www.gregcons.com/kateblog/)
+  - Bikeshedding is bad
+  - C.45: in-class member functions
+  - F.51: default arguments
+  - Don't hurt yourself
+  -  C.47: Define and initialize member variables in the order of the member declaration
+  -  I.23: Keep the number of functional arguments low 
+  -  Stop using that
+  -  ES.50: Don't cast away const
+    +  mutable in cachedValue
+  - I.11 Never Transfer Ownership by a raw pointer
+    +  in 2017 Return by value may be the way.  You don't mind copy which may be elided.
+    + [GSL owner ](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-ownership)
+  - Use this new thing properly
+  - F.21: To return multiple "out" values, prefer returning a tuple or struct 
+    - std::optional - if the two things are [an object] and [a bool] about whether or not that object is usable.  value_or(),  std::make_ tuple
+      + type, tie, structured_bindings
+        * std::tie(answer, number), auto[answer,answer]
+        * [structured bindings](http://en.cppreference.com/w/cpp/language/structured_binding)
+        *  struct should be first choice if structure has purpose/name
+  - Enum.3: Prefer class enums over "plain" enums
+  - Guideline Support Library
+  - I.12: Declare a pointer that must not be null as not_null
+    + gsl::not_null<Service*>
+  - ES.46: Avoid lossy (narrowing, truncating) arithmetic conversions
+    + ```c++ #pragma warning( push )
+      #pragma warning( disable: ThatWarning )
+      //code with ThatWarning here
+      #pragma warning( pop )```
+    +
 
 
 
