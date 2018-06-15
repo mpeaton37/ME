@@ -630,11 +630,99 @@ http://techbus.safaribooksonline.com/book/programming/cplusplus/9781484218761/fi
   - I.12: Declare a pointer that must not be null as not_null
     + gsl::not_null<Service*>
   - ES.46: Avoid lossy (narrowing, truncating) arithmetic conversions
-    + ```c++ #pragma warning( push )
+    ```c++ 
+      #pragma warning( push )
       #pragma warning( disable: ThatWarning )
       //code with ThatWarning here
-      #pragma warning( pop )```
-    +
+      #pragma warning( pop )
+    ```
+    
+[ Practical C++17 ](https://www.youtube.com/watch?v=nnY4e4faNp0)
+[Jason Turner](https://github.com/lefticus)
+- Structured Bindings: auto [a,b,c] = <expression>; 
+- if-switch-init expressions
+- ```c++
+     if (auto[key,value] = *my_map.begin();key=="mykey"){} 
+- emplace_back, emplace_front
+- std::string_view
+- Nested Namespaces
+- Class Template Type Deduction  Pair p{1,2.3}
+- if constexpr (compile-time conditionals )
+- fold expressions for variadic parameter packs
+- noexcept is now part of the type system   (negative..?)
+- Storing a map of string_view is extremely risky...
+```c++ 
+std::map<std::string_view,int>map;
+void add(const std::string &t_str,int val)
+{ map[t_str]=val; } 
+```
+- is_transparent{}; ?.... lol!
+-  [SFINAE](https://en.wikipedia.org/wiki/Substitution_failure_is_not_an_error)
+-  
 
+##### 
+- [Structured Bindings]()
+- [ It's Complicated, Kate Gregory](https://youtu.be/tTexD26jIN4)
+  + AAA almost always auto
+  + UB undefined behaviour
+  + RVO return value optimization
+  + NDR Ill formed, No Diagnostic Required
+  + ADL Argument Dependent Lookup
+  + CAT Const All the Things, constexpr all the things
+  + IIILE  Imediately invoked initializeing lambda expression
+  + ODR One Definition Rule
+  + SFINAE Substitution Failure is not an Error
+  + RAII Resource Aquisition Is Initialization
+  + Simplifying Principles
+    * Move and hide complexity if that's all you can do
+    * Aim to actually eliminate it
+    * Making code simpler and adding abstractions reduce bugs as well as just makeing a developer's life happier
+    * Readability matters
+    * Names matter
+  + Const correctness and "mutable" example
 
+```c++
+class Stuff
+n{
+private:
+	int number;
+	double number2;
+	int LongComplicatedCalculation const;
+	mutable int cachedValue;
+	mutable bool cachedValue;
 
+public:
+	Stuff(int n1, double n2) : number1(n1),
+number2(n2),cachedvalue(0),cachedvalid(false)P{
+	bool Service1(int x);
+	bool Service2(int y);
+	int getValue() const;
+};
+```  
+- Overly simple guidelines
+  * Don't use exceptions
+  * Don't use templates
+  * Whatever you new you must delete
+  * Don't use raw pointers
+  * Don't use the standard library
+- Alternatives
+  * Use the above when they help your application be simpler and more correct
+  * Getting noexcept right is hard
+  * F.21 discussion
+
+### 06/14/2018
+
+[Darpa Open Catalog](https://opencatalog.darpa.mil/XDATA.html)
+
+- [Smallk](http://smallk.github.io)
+	- low rank approximation algorithms, like MU, HALS, and BPP, some communication is necessary
+	- pro-posed algorithm ensures that after the input data is initially read into memory, it is never communicated
+	- Block Principle Pivoting is used
+	- [74 ironic](https://arxiv.org/abs/1605.06848) 
+	- ["Nonnegative and Matrix and Tensor Factorizations"](https://pdfs.semanticscholar.org/94cc/6daad548a03c6edb0351d686c2d4aa364634.pdf)
+- [Skylark](http://xdata-skylark.github.io/libskylark/)
+
+### 06/15/2018
+
+[Blaze Overview and Tutorial](https://www.youtube.com/watch?v=jNfwjZgCj6k)
+ 
