@@ -682,6 +682,7 @@ void add(const std::string &t_str,int val)
   + Const correctness and "mutable" example
 
 ```c++
+
 class Stuff
 n{
 private:
@@ -698,7 +699,8 @@ number2(n2),cachedvalue(0),cachedvalid(false)P{
 	bool Service2(int y);
 	int getValue() const;
 };
-```  
+```
+
 - Overly simple guidelines
   * Don't use exceptions
   * Don't use templates
@@ -725,4 +727,54 @@ number2(n2),cachedvalue(0),cachedvalid(false)P{
 ### 06/15/2018
 
 [Blaze Overview and Tutorial](https://www.youtube.com/watch?v=jNfwjZgCj6k)
- 
+["C++ atomics, from basic to advanced. What do they really do](https://www.youtube.com/watch?v=ZQFzMfHIxng)
+- std::atomic, compare_exchange_strong, fedch_add, 
+- atomic speed? -> spinlock > atmomic > CAS > mutex 
+- std::atomic<T>::is_lock_free()
+- C++17 constexpr is_always_lock_free()
+- cache line sharing
+- compare_exchange_weak()  times out and returns false?
+
+### 06/20/2018
+
+[XDATA](https://hpcuserforum.com/presentations/virginia-april2015/DARPAxdata-overview.pdf)
+
+### 06/26/2018
+
+[C++ the Newest Old Language ( https://www.youtube.com/watch?v=HAFrggEDr5U)
+- *C++11* auto, range-for, lambdas,move, smart pointers, constexpr, atomics, UDLs 
+- *c++14* return type deduction, better lambdas
+- *c++17* if constexpr, optional, variant, string_view
+- *c++20* Concepts, ranges, coroutines... maybe?
+```c++ 
+// Example of inline lambda using std::accumulate
+double rms(const vector<double> &v){
+    return sqrt(accumulate(v.begin(), v.end(),0.0,
+        [](double partialSum,double elem){return partialSum + elem*elem;}))
+}
+```
+```c++
+// Example of using value types
+class Pos{
+    float x{};
+    float y{};
+}
+public: 
+    constexpr Pos() = default;
+    constexpr Pos(float x, float y)
+        : x(x),y(y){}
+    constexpr Pos operator +(Pos other) const{
+        return Pos(x + other.x, y + other.y);
+    }
+```
+```c++
+// Example illustrating object lifetimes, move of rvalue
+class Document {
+    vector<unique_ptr<elem>>objects;
+public:
+    void add(unique_ptr<Elem> &&object) {
+        objects_.emplace_back(move(object));
+    }
+};
+```
+-fsanitize=address
