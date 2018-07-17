@@ -778,3 +778,68 @@ public:
 };
 ```
 -fsanitize=address
+
+### [STL algorithms in action](https://www.youtube.com/watch?v=eidEEmGLQcU)
+- sorting, nth-element, binary sort, merge, set operations on sorte structures, heap operations, minimum and maximum, lexicographical comparisons, permutation, generators
+
+- [ Tony Bell: Emergence and Submergence in the Nervous Systems](https://archive.org/details/ucbvs265_neural_comp_2012_09_12_Tony_Bell)
+- [Postsynaptic Organization of Synapses - Morgan Sheng ](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3225953/)
+- [Metabolite changing ion path?](https://en.wikipedia.org/wiki/Macromolecular_crowding)
+- [Quantum Biology](http://www.pnas.org/content/108/52/20908)
+- [ Multiscale Auditory Entrainment](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4673342/pdf/fnhum-09-00655.pdf)
+- [ Entrainment ](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4673342/pdf/fnhum-09-00655.pdf)
+- [ Cross-Level learning](http://cseweb.ucsd.edu/~gary/pubs/bell07.pdf)
+
+
+### 07/11/2018
+
+-[A Hierarchical Latent Vector Model
+for Learning Long-Term Structure in Music](https://arxiv.org/pdf/1803.05428.pdf)
+
+- [Nonlinear Acoustics](http://perso.univ-lemans.fr/~vtournat/wa_files/NLALectureVT.pdf)
+
+### 07/14/2018
+
+- [ Hardware Accelerators for Machine Learning ](https://cs217.github.io)
+  + [Lectures](https://cs217.github.io/readings)
+    * [Donoho](https://cs217.github.io/assets/lectures/StanfordStats385-20170927-Lecture01-Donoho.pdf) 
+  + [Slides](https://cs217.github.io/lecture_slides)
+- [ Four Horsemen of Silicon](https://cseweb.ucsd.edu/~mbtaylor/papers/DAC_DaSi_Horsemen_2012_Slides_Final.pdf)
+- [ TABLA ](https://www.cc.gatech.edu/~hadi/doc/paper/2015-tr-tabla.pdf)
+- [ Why Systolic ](http://www.eecs.harvard.edu/~htk/publication/1982-kung-why-systolic-architecture.pdf)
+- [ Anatomy of High Performance GEMM](https://www.cs.utexas.edu/users/pingali/CS378/2008sp/papers/gotoPaper.pdf)
+- [ Dark Memory](https://arxiv.org/abs/1602.04183)
+- [ Google TPU ](https://arxiv.org/abs/1602.04183)
+- [ CoDesign Tradeoff](https://ieeexplore.ieee.org/document/6212466/)
+- [ Tesla V100 ](http://images.nvidia.com/content/volta-architecture/pdf/volta-architecture-whitepaper.pdf)
+- [ Efficient Processing of Deep Neural Networks: a Tutorial and Survey ](https://arxiv.org/pdf/1703.09039.pdf)
+- [ Systems Approach to Blocking ](https://arxiv.org/abs/1606.04209)
+- [ Eyeriss](https://people.csail.mit.edu/emer/papers/2016.06.isca.eyeriss_architecture.pdf)
+- [ Spatial ](http://arsenalfc.stanford.edu/papers/spatial18.pdf)
+- [ Graphcore](https://supercomputersfordl2017.github.io/Presentations/SimonKnowlesGraphCore.pdf)
+- [EIE](https://arxiv.org/pdf/1602.01528.pdf)
+- [Flexpoint](https://arxiv.org/pdf/1711.02213.pdf)
+- [ Boris Ginsberg](https://arxiv.org/abs/1708.03888)
+  + [presentation](http://on-demand.gputechconf.com/gtc/2017/presentation/s7218-training-with-mixed-precision-boris-ginsburg.pdf)
+- [ Low Precision Training](https://arxiv.org/abs/1803.03383)
+- [ Deep Gradient compression](https://arxiv.org/abs/1712.01887)
+- [ Hogwild](https://people.eecs.berkeley.edu/~brecht/papers/hogwildTR.pdf)
+- [ Large Scale Destributed Deep Network](https://static.googleusercontent.com/media/research.google.com/en//archive/large_deep_networks_nips2012.pdf)
+- [ Catapult](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/10/Cloud-Scale-Acceleration-Architecture.pdf)
+- [ Brainwave ](https://www.microsoft.com/en-us/research/uploads/prod/2018/03/mi0218_Chung-2018Mar25.pdf)
+- [ Plastacine](http://dawn.cs.stanford.edu/pubs/plasticine-isca2017.pdf)
+- [ DawnBench](https://cs.stanford.edu/~matei/papers/2017/nips_sysml_dawnbench.pdf)
+- 
+
+
+
+
+
+### 07/15/2018
+
+- [Connectomics](https://ai.googleblog.com/2018/07/improving-connectomics-by-order-of.html)
+- [ Connectome dB ](https://db.humanconnectome.org/app/template/Login.vm;jsessionid=BC559E14193C7CF00D0BB19B6CB0DB0E)
+
+
+
+
