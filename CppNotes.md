@@ -1,5 +1,7 @@
 [Old notes](https://docs.google.com/document/d/1ZkNYxt-suCA4CFmzgXMdQojluI8TNiaJNhgTQcdqcOc/edit#)
+    
 
+[CppCon17](file:///Users/mpeaton/ME/CppCon17.md)
 
 [Bryce Adelstein Lelback](bryce@cppcon.org)
 [An Introduction to C++17 via Inspiring examples](https://youtu.be/fI2xiUqqH3Q)

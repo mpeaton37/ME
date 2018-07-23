@@ -806,6 +806,9 @@ for Learning Long-Term Structure in Music](https://arxiv.org/pdf/1803.05428.pdf)
   + [Slides](https://cs217.github.io/lecture_slides)
 - [ Four Horsemen of Silicon](https://cseweb.ucsd.edu/~mbtaylor/papers/DAC_DaSi_Horsemen_2012_Slides_Final.pdf)
 - [ TABLA ](https://www.cc.gatech.edu/~hadi/doc/paper/2015-tr-tabla.pdf)
+  + [ Denard Scaling ](https://en.wikipedia.org/wiki/Dennard_scaling)
+  + Algorithms that can be implemented with Stochastic Gradient
+  + 
 - [ Why Systolic ](http://www.eecs.harvard.edu/~htk/publication/1982-kung-why-systolic-architecture.pdf)
 - [ Anatomy of High Performance GEMM](https://www.cs.utexas.edu/users/pingali/CS378/2008sp/papers/gotoPaper.pdf)
 - [ Dark Memory](https://arxiv.org/abs/1602.04183)
@@ -813,6 +816,7 @@ for Learning Long-Term Structure in Music](https://arxiv.org/pdf/1803.05428.pdf)
 - [ CoDesign Tradeoff](https://ieeexplore.ieee.org/document/6212466/)
 - [ Tesla V100 ](http://images.nvidia.com/content/volta-architecture/pdf/volta-architecture-whitepaper.pdf)
 - [ Efficient Processing of Deep Neural Networks: a Tutorial and Survey ](https://arxiv.org/pdf/1703.09039.pdf)
+  + Network Output -> Inference
 - [ Systems Approach to Blocking ](https://arxiv.org/abs/1606.04209)
 - [ Eyeriss](https://people.csail.mit.edu/emer/papers/2016.06.isca.eyeriss_architecture.pdf)
 - [ Spatial ](http://arsenalfc.stanford.edu/papers/spatial18.pdf)
@@ -827,12 +831,10 @@ for Learning Long-Term Structure in Music](https://arxiv.org/pdf/1803.05428.pdf)
 - [ Large Scale Destributed Deep Network](https://static.googleusercontent.com/media/research.google.com/en//archive/large_deep_networks_nips2012.pdf)
 - [ Catapult](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/10/Cloud-Scale-Acceleration-Architecture.pdf)
 - [ Brainwave ](https://www.microsoft.com/en-us/research/uploads/prod/2018/03/mi0218_Chung-2018Mar25.pdf)
+  +  Project Brainwave leverages the massive Intel FPGA infra- structure that Microsoft has been deploying over the last few years
+  +  
 - [ Plastacine](http://dawn.cs.stanford.edu/pubs/plasticine-isca2017.pdf)
 - [ DawnBench](https://cs.stanford.edu/~matei/papers/2017/nips_sysml_dawnbench.pdf)
-- 
-
-
-
 
 
 ### 07/15/2018
@@ -840,6 +842,39 @@ for Learning Long-Term Structure in Music](https://arxiv.org/pdf/1803.05428.pdf)
 - [Connectomics](https://ai.googleblog.com/2018/07/improving-connectomics-by-order-of.html)
 - [ Connectome dB ](https://db.humanconnectome.org/app/template/Login.vm;jsessionid=BC559E14193C7CF00D0BB19B6CB0DB0E)
 
+### 07/17/2018
 
+- [open weather map](https://openweathermap.org/technology)
 
+### 07/18/2018
+
+- [libraries.io](https://libraries.io)
+
+### 07/19/2018
+[ CppNow18](CppNow18.md)
+
+[ jason turner embdeddedFM](https://www.embedded.fm/episodes/247)
+[ odin Holmes ](https://github.com/odinthenerd)
+  [ odin Holmes blogspot](http://odinthenerd.blogspot.com)
+
+[ CppCon Github](https://github.com/CppCon)
+
+#### 07/23/2018
+
+- [ What's Next for Pandas ](https://www.youtube.com/watch?v=_-gJtO0XR48&index=4&list=PLGVZCDnMOq0oywykwgVAcGvsGzagyMbwSP)
+  - [ Jeff Reback ](https://github.com/jreback)
+  - [ slideshare ](https://www.slideshare.net/secret/sUXFArGxQ1RFX7)
+  - [ Pandas2 ](https://pandas-dev.github.io/pandas2/) 
+  - [ Ibis](http://docs.ibis-project.org) is an expression language (compiler).  Feels like Spark, Dask, deferred Pandas
+  - [ Arrow ](https://arrow.apache.org) is a backend.  Fast, Flexible, Standard
+    + columar database
+    + Now introducing atomic units of computation
+    + ![ ][ unfriendly.png ]
+
+- [ Scalable Machine Learning with Dask (SciPy 2018)](https://youtu.be/ccfsbuqsjgI)
+  - [ TomAugspurger ](https://github.com/TomAugspurger)
+  - [ @TomAugpurger ](https://twitter.com/tomaugspurger?lang=en)
+  - [ Dask ](http://dask.pydata.org/en/latest/)
+    + [ Dask-ML](http://dask-ml.readthedocs.io/en/latest/) builds on Dask to make machine learning more scalable
+    +
 
