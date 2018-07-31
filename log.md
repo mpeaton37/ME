@@ -869,12 +869,86 @@ for Learning Long-Term Structure in Music](https://arxiv.org/pdf/1803.05428.pdf)
   - [ Arrow ](https://arrow.apache.org) is a backend.  Fast, Flexible, Standard
     + columar database
     + Now introducing atomic units of computation
-    + ![ ][ unfriendly.png ]
+    
+    
+    ![ ][ images/unfriendly.png ]
 
 - [ Scalable Machine Learning with Dask (SciPy 2018)](https://youtu.be/ccfsbuqsjgI)
   - [ TomAugspurger ](https://github.com/TomAugspurger)
   - [ @TomAugpurger ](https://twitter.com/tomaugspurger?lang=en)
   - [ Dask ](http://dask.pydata.org/en/latest/)
     + [ Dask-ML](http://dask-ml.readthedocs.io/en/latest/) builds on Dask to make machine learning more scalable
-    +
+    
 
+
+### 07/24/2018
+
+- [ Szilard Pafka ](https://github.com/szilard)
+    + [talk](https://www.youtube.com/watch?v=DqS6EKjqBbY)
+    + [slides](https://www.youtube.com/watch?v=DqS6EKjqBbY)
+
+
+### 07/25/2018
+
+- [ LLNL Training Manuals ](https://hpc.llnl.gov/training/tutorials)
+
+
+### 07/26/2018
+
+#### FPGA Programming
+[ 10 Ways to Program your FPGA ](https://www.eetimes.com/document.asp?doc_id=1329857&page_number=1)
+- C/C++
+- MyHDL (Python)
+- CHISEL (Scala)
+- JHDL (Java)
+- BSV  (Haskell)
+- MATLAB
+- Labview FPGA
+- SystemVerilog 
+- VHDL/Verilog
+- Spinal HDL
+
+#### Data Science Platforms
+
+- [Michelangio (Uber)] (https://eng.uber.com/michelangelo/)
+  + [ Franziska Bell ](https://www.youtube.com/watch?v=TEYtXfhbsZQ)
+    * 500 million time series at Uber
+    * < 1 min time to detection
+    * Misses expensive (business critical outage, noisy alerts are bad for team health
+    ![ ][ images/EngineeringAtUber.png ]
+    * Forecasing, personalization, dispatch
+    * 5B forecasts per minute
+
+
+- DeepBird
+- [ FBLearn (Facebook)] (https://code.fb.com/core-data/introducing-fblearner-flow-facebook-s-ai-backbone/)
+
+
+#### C++
+
+- [Jon Kalb ](https://cppnow2018.sched.com/speaker/sched23)
+  + [Exception Safe Code](http://exceptionsafecode.com)
+    * Exception Handling := Seperation of Error Detection from Error Handling
+      + Think Structurely, Maintain Invariance
+      + Basic < Strong < No-Throw
+
+    * [Part 2](https://www.youtube.com/watch?v=b9xMIKb1jMk)
+      + Throw by value, catch by reference
+      + async thread throw
+        *  ```cpp std::Async(Func);int v(f.get()); // if Func() threw, it comes out here. ```
+        * Nesting exceptions (25:42)
+        * Dynamic Exceptions are NOT checked at compile time.
+        * Two uses of "noexcept" keyword  (34:51)
+          - noexcept specification (of a function)
+            + noexcept(true), noexcept(false)
+            + destructors are noexcept by default  noexcept(true)
+          - noexcept operator
+             
+    * [Part 3](https://www.youtube.com/watch?v=MiKxfdkMJW8)
+
+
+### 7/30/2018
+
+- [ 10 minutes of yoga ](https://www.workandmoney.com/s/10-minute-yoga-routine-3a7e2b5bfee54695?utm_medium=cpc&utm_source=tab&utm_campaign=10minuteyoga-d994ddd21df26a22&utm_term=bonnier-popscinew)
+
+- [Machine Learning Notes](Machine%20Learning.md)
