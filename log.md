@@ -952,3 +952,128 @@ for Learning Long-Term Structure in Music](https://arxiv.org/pdf/1803.05428.pdf)
 - [ 10 minutes of yoga ](https://www.workandmoney.com/s/10-minute-yoga-routine-3a7e2b5bfee54695?utm_medium=cpc&utm_source=tab&utm_campaign=10minuteyoga-d994ddd21df26a22&utm_term=bonnier-popscinew)
 
 - [Machine Learning Notes](Machine%20Learning.md)
+
+
+### 7/31/2018
+
+- tried to build Tensorflow<-Bazel from source for local Magenta demo... I know not why... fail fail :(
+  * brew, conda versions instead
+- [ C++ Today The Beast is Back ](https://www.oreilly.com/programming/free/files/c++-today.pdf?mkt_tok=eyJpIjoiTURSak1USXdNR0ZsTURaaSIsInQiOiJOMEwrUGNPZVJJdDRnUlhlM3ZkMU1Oa2xXbDdrdEVOZHNMdkZENVlKdUZaTnlRME9FTTFpd1ZcL1pBaGg5dzlPQ3c5eFVYaTU2STdtcmN0enZic2lyTEJkTDhJMjJhc1wvbzZTb0VHVnVQRGNQak85WUJEVjRMTEtMVWp4dVQzVDRVIn0%3D)
+  - [ Jon Kalb ](https://www.linkedin.com/in/jonkalb/)
+  - [ @JonKalb ](https://twitter.com/_jonkalb?lang=en)
+
+```c++
+// Using lambdas for inner functions to simplify algorithms
+template <typename InputIterator1, typename InputIterator2, typename OutputIterator>
+auto move_merge(InputIterator1 first1, InputIterator1 last1, InputIterator2 first2, InputIterator2 last2,
+OutputIterator&& out) -> OutputIterator { 
+  using std::move; using std::forward;
+  auto drain = [&out](auto& first, auto& last){
+    return move(first, last, forward<OutputIterator>(out));
+  };
+  auto push = [&out](auto& value) { *out = move(value); ++out; };
+  auto advance = [&](auto& first_a, auto& last_a, auto& value_a,
+                     auto& first_b, auto& last_b, auto& value_b) {
+    push(value_a);
+   if (++first_a != last_a) {
+    value_a = move(*first_a); 
+    return true;
+  } else { // the sequence has ended. Drain the other one.
+  push(value_b);
+  out = drain(++first_b, last_b); return false;
+  } 
+};
+if
+else if (first2 == last2) { return drain(first1, last1); } auto value1(move(*first1));
+auto value2(move(*first2));
+for (bool not_done = true; not_done;) {
+  if (value2 < value1) {
+  not_done = advance(first2, last2, value2,
+  }else{ }
+}
+  return out; 
+}
+```
+
+```c++
+//Demonstration of move semantics  from https://en.cppreference.com/w/cpp/utility/move
+#include <iostream>
+#include <utility>
+#include <vector>
+#include <string>
+ 
+int main()
+{
+    std::string str = "Hello";
+    std::vector<std::string> v;
+ 
+    // uses the push_back(const T&) overload, which means 
+    // we'll incur the cost of copying str
+    v.push_back(str);
+    std::cout << "After copy, str is \"" << str << "\"\n";
+ 
+    // uses the rvalue reference push_back(T&&) overload, 
+    // which means no strings will be copied; instead, the contents
+    // of str will be moved into the vector.  This is less
+    // expensive, but also means str might now be empty.
+    v.push_back(std::move(str));
+    std::cout << "After move, str is \"" << str << "\"\n";
+ 
+    std::cout << "The contents of the vector are \"" << v[0]
+                                         << "\", \"" << v[1] << "\"\n";
+}
+```
+
+[move-forward](http://bajamircea.github.io/coding/cpp/2016/04/07/move-forward.html)
+
+```c++
+//Lambdas as scope with a return value
+deque<int> queue;
+bool done = false;
+mutex queue_mutex;
+condition_variable queue_changed;
+thread producer([&] {
+    for (int i = 0; i < 1000; ++i)
+    {
+        {
+            unique_lock<mutex> lock{queue_mutex};
+            queue.push_back(i);
+        }
+        // one must release the lock before notifying
+        queue_changed.notify_all();
+    } // end for
+    {
+        unique_lock<mutex> lock{queue_mutex};
+        done = true;
+    }
+    queue_changed.notify_all();
+});
+thread consumer([&] {
+    while (true)
+    {
+        auto maybe_data = [&]() -> boost::optional<int> { // (1)
+            unique_lock<mutex> lock{queue_mutex};
+            queue_changed.wait(lock,
+                               [&] { return done || !queue.empty(); });
+            if (!queue.empty())
+            {
+                auto data = move(queue[0]);
+                queue.pop_front();
+                return boost::make_optional(move(data));
+            }
+            return {};
+        }(); // release lock
+        // do stuff with data!
+        if (maybe_data)
+        {
+            std::cout << *maybe_data << '\n';
+        }
+        else
+        {
+            break;
+        }
+    }
+});
+producer.join();
+consumer.join();
+```
