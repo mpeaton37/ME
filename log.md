@@ -957,6 +957,7 @@ for Learning Long-Term Structure in Music](https://arxiv.org/pdf/1803.05428.pdf)
 ### 7/31/2018
 
 - tried to build Tensorflow<-Bazel from source for local Magenta demo... I know not why... fail fail :(
+  - [ build tensorflow](https://gist.github.com/kmhofmann/e368a2ebba05f807fa1a90b3bf9a1e03)
   * brew, conda versions instead
 - [ C++ Today The Beast is Back ](https://www.oreilly.com/programming/free/files/c++-today.pdf?mkt_tok=eyJpIjoiTURSak1USXdNR0ZsTURaaSIsInQiOiJOMEwrUGNPZVJJdDRnUlhlM3ZkMU1Oa2xXbDdrdEVOZHNMdkZENVlKdUZaTnlRME9FTTFpd1ZcL1pBaGg5dzlPQ3c5eFVYaTU2STdtcmN0enZic2lyTEJkTDhJMjJhc1wvbzZTb0VHVnVQRGNQak85WUJEVjRMTEtMVWp4dVQzVDRVIn0%3D)
   - [ Jon Kalb ](https://www.linkedin.com/in/jonkalb/)
@@ -1077,3 +1078,247 @@ thread consumer([&] {
 producer.join();
 consumer.join();
 ```
+
+
+#### Dask
+- [dsk_ml kmean](https://github.com/dask/dask-ml/blob/master/dask_ml/cluster/k_means.py) uses [cblas_sdot](https://software.intel.com/en-us/mkl-developer-reference-c-cblas-sdot)
+- [ K-means ](https://en.wikipedia.org/wiki/K-means_clustering)
+  - The running time of [Lloyd's algorithm ](http://www-evasion.imag.fr/people/Franck.Hetroy/Teaching/ProjetsImage/2007/Bib/lloyd-1982.pdf)(and most variants) is O(nkdi)
+  - [Scalable K-mean](https://arxiv.org/abs/1203.6402) 
+  - [Partition Function](https://en.wikipedia.org/wiki/Partition_function_(mathematics))->?[ Fredholm Theory](https://en.wikipedia.org/wiki/Fredholm_theory)
+  - [Green's Function](https://en.wikipedia.org/wiki/Green%27s_function)
+
+  ### VxWorks
+  -[ Basic RTOS Functions in VxWorks ](http://www.dauniv.ac.in/downloads/EmbsysRevEd_PPTs/Chap_9Lesson09EmsysNewVxWorks.pdf)
+  - [ VxWorks / Tornado FAQ ](https://borkhuis.home.xs4all.nl/vxworks/vxworks.html)
+-
+
+
+  ### 8/2/2018
+  - [ Jason Turner on Embeded.fm ](https://www.embedded.fm/episodes/247)
+  - [Cassandra](http://cassandra.apache.org) 
+    - [ Mastering Cassandra ](http://techbus.safaribooksonline.com/book/databases/9781782162681/firstchapter#X2ludGVybmFsX0h0bWxWaWV3P3htbGlkPTk3ODE3ODIxNjI2ODElMkZjaDAybHZsMXNlYzE0X2h0bWwmcXVlcnk9)
+      - CAP theorem that says to choose any two out of consistency, availability, and partition-tolerance
+       - Cassandra has tunable consistency
+       - NoSQL is a blanket term for the databases that solve the scalability issues that are common among relational databases. 
+
+       
+  - [skylla](https://github.com/scylladb/scylla) 
+  -  [Thrift](https://thrift.apache.org)
+  - [ llvm ](http://llvm.org/git/llvm)
+  - [ arduino due ](https://store.arduino.cc/usa/arduino-due)
+  - 
+
+
+  ### 8/3/2018
+
+  - [Predictive Model Markup Language (PMML)](https://en.wikipedia.org/wiki/Predictive_Model_Markup_Language) 
+  - [ Deploying Keras Models with Flask](https://towardsdatascience.com/deploying-keras-deep-learning-models-with-flask-5da4181436a2)
+
+  #### Automated Machine Learning
+
+  - [ AutoML ](https://www.forbes.com/sites/janakirammsv/2018/04/15/why-automl-is-set-to-become-the-future-of-artificial-intelligence/#25cec883780a)
+  - [ Data Robot]()
+  - [ H20 ]()
+  - [ Auto Keras]()
+  - [ Learning Transferable Architectures for Scalable Image Recognitinos](https://arxiv.org/abs/1707.07012)
+
+
+  ### 8/6/2018
+  
+[ Seastar ](http://seastar.io), [OSv](http://osv.io), SoftInt , 
+- std::functional, std::bind -> used to handle callbacks and such. [safari online video](http://techbus.safaribooksonline.com/video/programming/cplusplus/9781491934623)
+- [std::lock_guard](https://en.cppreference.com/w/cpp/thread/lock_guard)
+- [ threads (copper spice)](https://youtu.be/LNYTYVUIFXw)
+
+#### USB emergency divergency
+- [phison controllers Richard Harman](https://www.slideshare.net/xabean/controlling-usb-flash-drive-controllers-expose-of-hidden-features)
+- [pyusb](http://pyusb.github.io/pyusb/)
+- [libusb](http://libusb.sourceforge.net/api-1.0/libusb_api.html)
+- [UnRAID LimeTech](https://lime-technology.com/application-server/)
+
+#### Open Architecture Comparison
+- [ FACE ](http)
+  - Segments
+    - Operating System Segment 
+    - Input/Output Services Segment
+    - Platform-Specific Services Segment
+    - Transport Services Segment
+    - Portable Components Segment
+  - Interfaces
+    - Operating System Segment Interface
+    - I/O Services Interface
+    - Transport Services Interface
+- [ Open Mission Systems](https://www.vdl.afrl.af.mil/programs/uci/oms.php)
+  - 
+
+#### Java
+- JEP 286: Local Variable Type Inference
+- JEP 316: Heap Allocation on Alternative Memory Devices
+
+#### OpenGL
+- [ example ](https://www.opengl.org/archives/resources/code/samples/glut_examples/examples/halomagic.c)
+
+
+#### Avionics
+- Busses
+  - ARINC 429 := Single Source Multiple Sink,  100 kbps,  32 bit words, 2 Mbps
+  - ARINC 629 := (1995) Multiple Source Multiple Sink (Full Duplex)
+  - MIL-STD 1553 := (1975) Multiple Source Multiple Sink (Full Duplex)
+  - MIL-STD 1773
+
+  #### Parallel Programming
+  - Flynn Classification
+    - SISD : stands for Single Instruction Single Data, basically it is the classical Von Neumann machine;
+    - SIMD : Single instruction Multiple Data, for example CUDA is perfect for those kind of problems. Note that this classification evolved to Single Program Multiple Data i.e: signal/image/video processing, or even decryption...etc.
+    - MISD : Multiple Instruction Single Data, it is a theoretical model, I do not think it really exists.
+    - MIMD : Multiple Instruction Multiple Data, I think you adapt OpenMP and MPI (separately or hybrid) and keep in mind that the first one is for shared memory and second one is for distributed memory.
+  - OpenMP
+    - Shared Memory Model
+    - Relatively easy to learn
+    - [ Youtube from Tim Mattson et al ](https://www.youtube.com/watch?v=nE-xN4Bf8XI)
+  - MPI
+    - Message Passing 
+     - Uses network communication
+    - each MPI process allocates the same amount of memory
+    - not fault tolerant
+  - OpenCL
+    - [ example ](https://developer.apple.com/library/archive/samplecode/OpenCL_Hello_World_Example/Listings/hello_c.html)
+  - GPU
+    - [Thrust / Cuda](https://docs.nvidia.com/cuda/thrust/index.html)
+    - OpenCL
+    - Cekirdekler API
+    - [arrayfire]( https://arrayfire.com)
+    - [ amd parallel ](http://developer.amd.com/wordpress/media/2013/07/AMD_Accelerated_Parallel_Processing_OpenCL_Programming_Guide-rev-2.7.pdf)
+    - [ open CL and 13 dwarfs](http://developer.amd.com/wordpress/media/2013/06/2155_final.pdf)
+
+  - FPGA
+    - C/C++
+    - MyHDL (Python)
+    -  CHISEL (Scala)
+    - JHDL (Java)
+    - BSV  (Haskell)
+    - MATLAB
+    - Labview FPGA
+    - SystemVerilog 
+    - VHDL/Verilog
+    - Spinal HDL
+    - [ 10 Ways to Program your FPGA ](https://www.eetimes.com/document.asp?doc_id=1329857&page_number=1)
+
+- Distributed ( Big Data )
+  - Map Reduce
+    - Hadoop
+    - [BOINC](https://boinc.berkeley.edu)
+
+
+- Algorithms
+  -[ Dynamic Programming ](https://www.geeksforgeeks.org/dynamic-programming/)
+
+- Data Structures
+  - [HashMap](https://www.geeksforgeeks.org/java-util-hashmap-in-java/)
+  
+
+### 08/10/2018
+
+[snowflake](https://arxiv.org/abs/1708.02579)
+- (CNN) layer characteristics vary widely from one model to the next
+  - Conventional Layers
+  - Inception Modules
+  - Residual Modules
+
+
+### 8/13/2018
+
+- [KairosDB on Scyllas](https://www.scylladb.com/webinar/on-demand-webinar-how-to-build-a-highly-available-time-series-solution-with-kairosdb/?aliId=6609490)
+
+
+### 8/14/2018
+- [ Deep EEG ](https://arxiv.org/pdf/1703.05051.pdf)
+- [ Regulus Cyber ](https://www.regulus.com)
+
+- [ A survey of Power and Energy Efficient Techniques for High Performance Linear Algebra ](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.709.107&rep=rep1&type=pdf)
+  - CPU-bound, network- bound, memory-bound, and disk-bound), power and energy consumption on CPU dominate system power and energy costs (35%􏰂48%), and the second most power-/energy-consuming hardware component is memory (16%􏰂27%)
+  - [ Energy Efficient Matix Multiplicaiton on FPGA](http://halcyon.usc.edu/~pk/prasannawebsite/papers/jangFPL02.pdf)
+    - 􏰨􏰁Energy, Area, Time
+  - [ Facebook Music AI ](https://medium.com/the-artificial-intelligence-journal/understanding-how-facebooks-new-ai-translates-between-music-genres-in-7-minutes-61d6cb1e5b4a)
+  
+  [Facebook AI](https://research.fb.com/category/facebook-ai-research/)
+  [ FAIR UMTN ](https://research.fb.com/facebook-researchers-use-ai-to-turn-whistles-into-orchestral-music-and-power-other-musical-translations/)
+    - [NVWaveNet]( https://github.com/NVIDIA/nv-wavenet)
+     􏰉􏰂􏰃􏰣􏰕 􏰐􏰤 􏰀􏰔􏰵 􏰳􏰀􏰁􏰂􏰃􏰄􏰅􏰆􏰔
+
+### 8/17/2018
+
+- [ AI cheat sheet (Medium)](https://becominghuman.ai/cheat-sheets-for-ai-neural-networks-machine-learning-deep-learning-big-data-678c51b4b463)
+
+### 8/20/2018
+
+[ Travis Oliphant presentation ](https://speakerdeck.com/teoliphant/ml-in-python?slide=17)
+   - [ Chainer and Extremely Large Minibatch ](https://arxiv.org/abs/1711.04325)
+   - [ IDEEP, DNN-MKL ](https://github.com/intel/mkl-dnn)
+
+
+[ 10 Statistical Techniques ](https://medium.com/cracking-the-data-science-interview/the-10-statistical-techniques-data-scientists-need-to-master-1ef6dbd531f7)
+
+### 8/21/2018
+[ Deep Learning Book](https://www.deeplearningbook.org/contents/prob.html)
+[ Model Depot ](https://www.modeldepot.io/?source=user_profile---------------------------)
+[ Hastie book ](https://web.stanford.edu/~hastie/ElemStatLearn/)
+[ Darknet ](https://pjreddie.com/darknet/)
+[ Joseph Redmon ](https://pjreddie.com)
+
+
+### 8/23/2018
+[ Intel Acceleration stack ](https://www.intel.com/content/www/us/en/programmable/documentation/iyu1522005567196.html)
+[ Comparison ](https://www.nextplatform.com/2017/03/21/can-fpgas-beat-gpus-accelerating-next-generation-deep-learning/)
+
+
+
+### 8/24/2018
+
+[KNIME](https://www.knime.com)
+
+
+#### Graph Database
+[ aws neptune ](https://aws.amazon.com/neptune/)
+[ Neo4j ](https://neo4j.com)
+
+
+
+### 8/25/2018
+
+[ Plenoptic Camera ](http://graphics.stanford.edu/papers/lfcamera/lfcamera-150dpi.pdf)
+ [ Raytrix ](https://raytrix.de)
+[ Artificial Neural Systems]( https://anuradhasrinivas.files.wordpress.com/2013/08/29721562-zurada-introduction-to-artificial-neural-systems-wpc-1992.pdf )
+[ AWS-fpga README.md](https://github.com/aws/aws-fpga/blob/master/README.md)
+  - [ ]()
+    - Amazon Machine Image (AMI):= golden image, prototype
+    - Amazon FPGA Image (AFI):= Amazon FPGA Image
+    
+
+### 8/28/2018
+- [Xilinx SDAccel](https://www.xilinx.com/video/software/sdaccel-development-environment-demo.html)
+  - [ Smith Waterman](https://github.com/Xilinx/SDAccel_Examples/tree/master/acceleration/smithwaterman)
+    - [Wikipedia](https://en.wikipedia.org/wiki/Smith–Waterman_algorithm)
+    - [ Genetic Sequence Alignment on a Supercomputing platform](https://repository.tudelft.nl/islandora/object/uuid%3Abbbbd3c8-7b27-4a1b-bfd6-67695eec7449)
+      - [ Linear Systolic Array ]()
+      - [ Convey HC-1 ]()
+      - [ Intel implementaiton ](https://www.intel.com/content/dam/altera-www/global/en_US/pdfs/literature/wp/wp-01035.pdf)
+      - [ Another S-W thesis ?](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&ved=2ahUKEwja0J2Ml5HdAhVM_IMKHRBfA1cQFjABegQIBxAC&url=https%3A%2F%2Frepository.tudelft.nl%2Fislandora%2Fobject%2Fuuid%3Ac35fa6e0-e632-4f17-bf84-0f1cc8f98c0c%2Fdatastream%2FOBJ%2Fdownload&usg=AOvVaw174A7zblm2ZFMKTIA8Pgdl)
+      - [ Lake Khasan ](https://www.linkedin.com/in/laiq-hasan-46270210/)
+
+### 8/29/2018
+#### Presentation tools
+- [ 4 Markdown powered slide generators ](https://opensource.com/article/18/5/markdown-slide-generators)
+- [Marp](https://yhatt.github.io/marp/)
+- [Adobe Spark](https://spark.adobe.com/video/SURSphvyCEhXV)
+  - Great dynamic content, start with beautiful pictures.
+- [ Jupyter2Slides](https://github.com/datitran/jupyter2slides)
+- [ HackerSlides]()
+- [ Reveal.js](https://github.com/hakimel/reveal.js/wiki/Example-Presentations)
+  - Github, browswer web host required?
+  - [ Slides ](https://slides.com)
+
+
+#### Some good looking presentations
+- [ Lemi Orhan ](https://speakerdeck.com/lemiorhan/let-the-elephants-leave-the-room-remove-waste-in-software-development?slide=7)

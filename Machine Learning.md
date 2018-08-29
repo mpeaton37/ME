@@ -5,18 +5,33 @@ Emmanuel Candes
       * 
 
 
-
+[ Deep Learning .net ](http://deeplearning.net/reading-list/)
 
 #### ML/DS frameworks
 
 - [Torch](http://torch.ch)/[PyTorch](https://pytorch.org)
   * [Grokking PyTorch](https://github.com/Kaixhin/grokking-pytorch)
 - [Theano](https://github.com/Theano/)
+- [caffe ](http://caffe.berkeleyvision.org)
 - [ Keras](http://keras.io)
-- [ Microsoft]
+- [ Microsoft cntk](https://docs.microsoft.com/en-us/cognitive-toolkit/)
+
 - [ Tensorflow]
 - [scikit-learn](http://scikit-learn.org/)
+- [ Chainer ](https://chainer.org)
+- [ Paddle Paddle ](http://paddlepaddle.org)
+- [ Gluon ](https://github.com/gluon-api/gluon-api/)
+- [ TVM ](https://tvm.ai)
 
+#### Array-like objects/ML datatypes
+- [Bohrium]()
+- [neon]()
+- [XND]()
+- [xarray]()
+
+#### Misc 
+- dask, numbba, pandas, dy/net, Eduard, Sonnet, Braid, anyrl, sophon, intelAI, Oath:, skymizer, onnx, prefferred Networks, Pyro, skorch, FastAI
+- 
 
 #### Deployment
 - [google and Uber's best practices for deployment](https://medium.com/intuitionmachine/google-and-ubers-best-practices-for-deep-learning-58488a8899b6)
@@ -24,5 +39,19 @@ Emmanuel Candes
 - Google
 - Twitter
 - Uber
-- FBlearn
+- [FBlearn BigBasin](https://code.fb.com/data-center-engineering/introducing-big-basin-our-next-generation-ai-hardware/)
 - Algorithmia
+
+-[Gym](https://gym.openai.com)
+- [mxnet]([mxnet](https://mxnet.apache.org)
+)
+- [ Hierarchical Neural Attention](https://towardsdatascience.com/the-fall-of-rnn-lstm-2d1594c74ce0)
+
+
+#### Hardware
+- [ AWS Xilinx ]()
+- [ Brainwave Intel()
+- [ GPU Nvidia]()
+- [ Intel OPAE ]
+- [ Swarm64 ]()
+- [ Eniac ]()
