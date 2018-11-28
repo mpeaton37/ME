@@ -12,10 +12,10 @@
 
 #### Google Cloud Platform
 - Intro to Scaling Data Analysis
-	- ![DataStore is like a persistant HashMap](https://storage.cloud.google.com/passet/images/gcenotes/Datastore.png?_ga=2.51433632.-80940699.1539256678&_gac=1.208334118.1541249466.EAIaIQobChMI77Lp0t-13gIVC77ACh125w3fEAAYASAAEgK2efD_BwE)
-	- ![Crud Operations are easily implemented in Datastore](https://storage.cloud.google.com/passet/images/gcenotes/Crud.png?_ga=2.86431889.-80940699.1539256678&_gac=1.195751448.1541249466.EAIaIQobChMI77Lp0t-13gIVC77ACh125w3fEAAYASAAEgK2efD_BwE)
+	- ![DataStore is like a persistant HashMap](http://35.225.147.84/images/gcenotes/Datastore.png?_ga=2.51433632.-80940699.1539256678&_gac=1.208334118.1541249466.EAIaIQobChMI77Lp0t-13gIVC77ACh125w3fEAAYASAAEgK2efD_BwE)
+	- ![Crud Operations are easily implemented in Datastore](http://35.225.147.84/images/gcenotes/Crud.png)
         - Create, Read, Update, Delete 
-	- ![Choose Storage Option based on Usage Pattern](https://storage.cloud.google.com/passet/images/gcenotes/Storage.png?_ga=2.94828693.-80940699.1539256678&_gac=1.253890236.1541249466.EAIaIQobChMI77Lp0t-13gIVC77ACh125w3fEAAYASAAEgK2efD_BwE)
+	- ![Choose Storage Option based on Usage Pattern](http://35.225.147.84/images/gcenotes/Storage.png?_ga=2.94828693.-80940699.1539256678&_gac=1.253890236.1541249466.EAIaIQobChMI77Lp0t-13gIVC77ACh125w3fEAAYASAAEgK2efD_BwE)
 		- Cloud Storage: File System
 		- Cloud SQL: Relational
 		- Datastore: Hierarchical
@@ -143,7 +143,7 @@ client.get_versions()
 - [price list](https://cloud.google.com/pricing/list### Pricing)
 - [BigQueryStorage](https://cloud.google.com/bigquery/pricing)
 - [ Transfer Appliance](https://cloud.google.com/data-transfer/pricing)
-- 
+- [ Persistant Disk ](https://cloud.google.com/persistent-disk/) 
 
 ### Data Transfer
 - [ Transfering big Data Sets](https://cloud.google.com/solutions/transferring-big-data-sets-to-gcp)

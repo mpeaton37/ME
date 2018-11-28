@@ -2690,4 +2690,5 @@ cat files.txt | xargs rm -rf
         Misc: Jenkins, bastion, billing, monitoring, security,
     - Data Lake? -> [Avro](https://en.wikipedia.org/wiki/Apache_Avro)?
     - [Cloud Dataproc](https://cloud.google.com/solutions/images/using-apache-hive-on-cloud-dataproc-1.svg) is a fast, easy-to-use, fully managed service on GCP for running Apache Spark and Apache Hadoop workloads in a simple, cost-efficient way. Even though Cloud Dataproc instances can remain stateless, we recommend persisting the Hive data in Cloud Storage and the Hive metastore in MySQL on Cloud SQL. 
-    -  
+- [Table Partitionaing](https://www.cathrinewilhelmsen.net/2015/04/12/table-partitioning-in-sql-server/)
+
