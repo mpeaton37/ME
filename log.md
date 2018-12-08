@@ -2680,7 +2680,11 @@ cat files.txt | xargs rm -rf
 
 ### 11/27/2018
 #### gcloud continues
-```gcloud auth configure-docker```
+
+```
+gcloud auth configure-docker
+```
+
 - Case Studies
     - Flow Logistics: 
         Data: Cassandra, Kafka
@@ -2692,3 +2696,18 @@ cat files.txt | xargs rm -rf
     - [Cloud Dataproc](https://cloud.google.com/solutions/images/using-apache-hive-on-cloud-dataproc-1.svg) is a fast, easy-to-use, fully managed service on GCP for running Apache Spark and Apache Hadoop workloads in a simple, cost-efficient way. Even though Cloud Dataproc instances can remain stateless, we recommend persisting the Hive data in Cloud Storage and the Hive metastore in MySQL on Cloud SQL. 
 - [Table Partitionaing](https://www.cathrinewilhelmsen.net/2015/04/12/table-partitioning-in-sql-server/)
 
+
+### 12/05/2018
+#### Windows Interoperatbility
+[ MSDev](https://blogs.msdn.microsoft.com/wsl/2016/10/19/windows-and-ubuntu-interoperability)
+[ Share WSL ](https://blogs.msdn.microsoft.com/commandline/2017/12/22/share-environment-vars-between-wsl-and-windows/)
+[ WSL DS ](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
+
+
+### Parsers in Python
+[ Sly ](https://github.com/dabeaz/sly)
+
+### 12/06/2018
+#### ??= Computer software architecture entropy reduces from FBP -> Functional.  Conjecture that graph complexity , "loopiness" reduction, hot-spots (space-time, non-uniformity of computation and memory utilization), should optimized.
+
+ 
