@@ -2706,8 +2706,80 @@ gcloud auth configure-docker
 
 ### Parsers in Python
 [ Sly ](https://github.com/dabeaz/sly)
-
+[ The C Pre-Processor](https://web.eecs.umich.edu/~prabal/teaching/eecs373-f11/readings/Preprocessor.pdf)
 ### 12/06/2018
 #### ??= Computer software architecture entropy reduces from FBP -> Functional.  Conjecture that graph complexity , "loopiness" reduction, hot-spots (space-time, non-uniformity of computation and memory utilization), should optimized.
 
+### 12/09/2018
+- GCS practice with TRavis CI demo on app engine
+- Azure (notebook ), Configured Dask system on Digital Ocean (scheduler), Google Cloud Services ( worker )
+- 
+- [ osquery](https://osquery.io), [ hubblestack ](https://blogs.adobe.com/security/2017/12/introducing-hubblestack.html)
+- [ Travis CI tutorial ](https://cloud.google.com/solutions/continuous-delivery-with-travis-ci)  
+
+
+### 12/11/2018
+- [ docker on Azure ](https://github.com/charlieding/Virtualization-Documentation/tree/live/hyperv-tools/Nested### 12/11/2018)
+- [ Docker Hyper-v](https://docs.docker.com/machine/drivers/hyper-v/#options)
+- [ Hyper V Setup ](https://docs.docker.com/machine/drivers/hyper-v/#3-reboot)
+- [ Linux Java GCE ](https://cloud.google.com/java/docs/setup)
+- [ JPype ](http://jpype.sourceforge.net)
+- [ PaloAlto Linx ](https://www.paloaltonetworks.com/documentation/41/globalprotect/globalprotect-app-user-guide/globalprotect-app-for-linux/use-the-globalprotect-app-for-linux#id181NC060RNM)
+- [ Nested Virtualization](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/nested-virtualization)
+- [ VMWare Player ](https://my.vmware.com/web/vmware/free#desktop_end_user_computing/vmware_player/7_0)
+- [ Callng Java from Python ](https://exceptionshub.com/calling-java-from-python-closed.html)
+- [ Jniius vs JPype ](https://docs.google.com/spreadsheets/d/1fHBJJDQ0BavUMX8O7rKAjpGwY6AB_OO_AsudM4ch57k/edit#gid=0)
+- [ Pyjnius ](https://pyjnius.readthedocs.io/en/latest/)
  
+- [ jtds ](https://sourceforge.net/projects/jtds/files/jtds/1.2.2/)
+- [ open edge ](https://www.progress.com/download/thank-you?interface=jdbc&ds=openedge&os=std)
+- [ jaydebapi ](https://pypi.org/project/JayDeBeApi/)
+- [ pyodbc ](https://pypi.org/project/pyodbc/)
+- [ pymssql ](http://www.pymssql.org/en/stable/)
+- [ oracle java ](https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html)
+
+```
+jar tf <jarfile>
+```
+
+- [ Ilya ](http://ikuz.eu/2011/12/19/connect-to-mssql-from-matlab-on-mac-os-x/)
+
+- [ DBVisualizer](https://www.dbvis.com/download/10.0)
+
+``` 
+launchctl list 
+launchctl remove <name_from_list_command>
+ ls /Library/LaunchAgents/
+ ls /Library/LaunchDaemons/
+ System Preferences > Users & Groups.
+```
+[ launcht items ](http://yorkerfrank.blogspot.com/2011/07/how-to-remove-unneeded-startup-services.html)
+[ launc itesm ](https://www.macworld.com/article/2047747/take-control-of-startup-and-login-items.html)
+[ reload nginx ](https://www.cyberciti.biz/faq/nginx-linux-restart/) 
+
+[ CI Nvidia ](http://on-demand.gputechconf.com/gtc/2018/presentation/s8563-building-a-gpu-focused-ci-solution.pdf)
+[ TSQL ](https://github.com/tsqllint/tsqllint)
+[ RAPIDS ](https://rapids.ai/)
+[ GPUCI ](https://github.com/rapidsai/libgdf/wiki/gpuCI)
+
+
+[ git commands ](https://tapaswenipathak.wordpress.com/2016/02/15/git-fetch-merge-git-fetch-rebase-git-pull/)
+``` 
+git config --global credential.helper cache
+git config --global credential.helper 'cache --timeout=3600'
+
+```
+### 12/20/2018
+[echo "ServerAliveInterval 120" > /etc/ssh/ssh_config](https://askubuntu.com/a/142430)
+[MS restore ](https://docs.microsoft.com/en-us/sql/t-sql/statements/restore-statements-transact-sql?view=sql-server-2017)
+
+```git rebase -i HEAD~2```
+``` set_diff_df = pd.concat([df2, df1, df1]).drop_duplicates(keep=False) ``` results in  right difference in pandas.
+
+### 12/21/2018
+- Ibis, Xonsh, custom writes in google groups, 
+- Q, Argparse, logger, chainmap 
+[ dog_tunnel plist ](http://www.zenspider.com/ruby/2011/11/ssh-tunneling-via-osx-s-launchctl.html)
+``` launchctl load ~/Library/LaunchAgents/com.zenspider.ssh-tunnel.plist```
+
+[ ssh config tunnels ](https://starkandwayne.com/blog/setting-up-an-ssh-tunnel-with-ssh-config/)
