@@ -2783,3 +2783,30 @@ git config --global credential.helper 'cache --timeout=3600'
 ``` launchctl load ~/Library/LaunchAgents/com.zenspider.ssh-tunnel.plist```
 
 [ ssh config tunnels ](https://starkandwayne.com/blog/setting-up-an-ssh-tunnel-with-ssh-config/)
+- set up socks server 
+- [Socks Mac ](https://superuser.com/questions/352826/set-socks-proxy-for-safari)
+- [ keep alive ](https://www.howtogeek.com/howto/linux/keep-your-linux-ssh-session-from-disconnecting/)
+- ``` networksetup -setwebproxystate Ethernet on```
+- ``` conda clean all ```
+
+```
+   return jdbc.connect("net.sourceforge.jtds.jdbc.Driver","jdbc:jtds:sqlserver://" + \
+                        serveraddr + ":" + port + ";DatabaseName=" +\
+                        dbname ,dbuser ,dbpasswd , jarpath , ) 
+```
+- How to use git over socks proxy
+	-[SO thread](https://serverfault.com/questions/815043/how-to-give-username-password-to-git-clone-in-a-script-but-not-store-credential/815057)
+- [ Specify Database schema to jdbc](https://stackoverflow.com/a/4820666)
+- ```ssh root@ssh root@<your droplet's ip address> "dd if=/dev/vda1 | gzip -1 -" | dd of=image.gz)```
+- [ Deploy Docker on Digital Ocean ](https://blog.machinebox.io/deploy-machine-box-in-digital-ocean-385265fbeafd)
+	- ``` docker-machine create --digitalocean-size "s-2vcpu-4gb" --driver digitalocean --digitalocean-access-token TOKEN IMAGENAME```
+
+### 12/26/20018
+[ Python strftime reference](http://strftime.org/)
+[ pyodbc walk-through](https://tryolabs.com/blog/2012/06/25/connecting-sql-server-database-python-under-ubuntu/)
+
+
+### 12/30/2018
+```curl --socks5-hostname 127.0.0.1:1080 http://wtfismyip.com/json```
+[ SOCKS commands ](https://gist.github.com/fearblackcat/850c6e027d5a03017c44daaa6a7ffc30)
+[ git proxies ](http://cms-sw.github.io/tutorial-proxy.html)

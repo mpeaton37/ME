@@ -1,3 +1,86 @@
+### Google Cloud Platform Fundamentals
+- NIST definition of cloud computing: way of using IT that has:
+	- On demand
+	- Broad network access
+	- Resource pooling
+	- Rapid elasticity
+	- Measured service
+- GCP Pricing offers per second billing for
+	- Google Compute Engine
+	- Kubernetes Engine := Container Infrastructure as a service
+	- Cloud Data Proc := Hadoop as a Service
+	- App Engine := Platform as a Servicee
+	- Sustained use discounts are available for over 25% use/month
+- Several open API's are available from GCP
+	- Cloud Bigtable : Database that implements Hbase interface	
+	- Cloud Dataproc := Hadoop 
+	- Tansorflow := Software library for machine learning
+	- Kubernetes := Container management allows users to mix and match
+	- StackDriver := Cloud monitoring service.
+	- google provides compatability layers to prevent lock-in
+	- 
+- Summary
+	- Compute, Storage, Big Data, Networking, Machine Learning and  Operations and tools
+	- Compute = [ Compute Engine, Kubernetes Engine, App Engine, Cloud Functions ]
+	- Storage = [ Bigtable, Cloud Storage, Cloud SQL, Cloud Spanner, Cloud Datastore ] 
+	- Big Data = [ BigQuery, Pub/Sub, Dataflow, Dataproc, Datalab]
+	- Machine Learning = [ Natural Language API, Vision API, Machine Learning, Speech API, Translate API ]
+- Multi-layered security approach
+	- Hardware Infrastructure - Hardware design and provenance (Titan chip); secure boot stack; premises security
+	- Service deploymnent - Encryption of inter-service communication
+	- User identity - Central identity service with support for U2F
+	- Storage services - Encryption at rest
+	- Internet conmunications - Google Front End; designed in Denial of Service protection
+	- Operational security - Intrusion detections systems; techniques to reduce insider risk; employee U2F use; software development practices	
+	- Resource hierarchy levels define trust boundaries.  Policies are inherited downward.
+	-   
+- IAM roles
+	- (Who), can do (What), on which resource (Where) 
+	- Who = ( account, cloud identity user, service account, google group, gsuite identity or domain )
+	- What = ( primitive = (owner, editor, viewer, billing administrator),predefined=(),custom= (),) 
+	- Where = ( project, folder or org) 	
+- Interacting with Google Cloud
+	- Cloud Client Libraries := Latest and recommended libraries
+	- Google API Client Library := generallity and completeness
+	- Cloud Console Mobile App
+- Cloud Launcher (Former Cloud Launcher) 
+	-   
+- Google Cloud VPC
+	- SEgment, Firewall rules, create static routes
+	- VPC networks have global scope, subnets are regional and may span any GCP region worldwide
+	- Cloud load balancing Frontends and produces cross region failover and load balancing
+	- Global Https, SSL proxy, TCP proxy, REgional, Regional Internal load-balancing options
+	- VPN, Direct Peering, Carrier Peering, Dedicated Interconnect
+	- Cloud Routing over Border Gateway Protocol.
+	
+- Cloud Storage
+	- Object sotrage is not a filesystem
+	- Storage Objects are immutable
+	- Data at rest and in transit are encrypted
+	- Multi-Regional, Regional, Nearline, Coldline
+	- Storage Price, vs Transfer Price 
+	- 
+- BigTable
+	- HBase interface
+	- Low Latency, large data
+	- in from Dataflow, Spark, Storm
+	- read and written from Hadoop map reduce, Dataflow, or spark
+	- used by google for Google maps
+	-  
+- Cloud SQL and Cloud Spanner
+	- Provides read, failover, and external replica services
+	- on demand or scheduled backups
+	- verticle (machine type) and horizontal scaling ( read replicas)
+	- accesible from other google services
+	- Cloud Spanner allows global scaling
+- Cloud Datastore
+	- highly scalable NoSQL databse
+	- SQL like queries
+	- free daily quota
+	- 
+	 
+
+
 [Chris Ostrouchov's notes](https://gist.github.com/costrouc/d9db5f6f81779418842bb0df580a11ca)
 
 #### Google Cloud Services Coursera Course
@@ -6,11 +89,11 @@
 - Cloud Storage is a Blob
   - Bucket like domain name gs://acme-sales/data
   - use gsutil {cp,mv,rsync,etc.}
-  - REST API
-  - Use Cloud Storage as a holding area
+  - REST API - Use Cloud Storage as a holding area
   - Zone locallity to reduce latency, distribute for redundancy & global access.s
 
 #### Google Cloud Platform
+- 
 - Intro to Scaling Data Analysis
 	- ![DataStore is like a persistant HashMap](http://35.225.147.84/images/gcenotes/Datastore.png?_ga=2.51433632.-80940699.1539256678&_gac=1.208334118.1541249466.EAIaIQobChMI77Lp0t-13gIVC77ACh125w3fEAAYASAAEgK2efD_BwE)
 	- ![Crud Operations are easily implemented in Datastore](http://35.225.147.84/images/gcenotes/Crud.png)
@@ -172,3 +255,4 @@ client.get_versions()
 
 
 ![Data Lake](https://cloud.google.com/solutions/images/data-lake-workflow.svg)
+
