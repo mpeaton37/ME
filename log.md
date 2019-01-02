@@ -2810,3 +2810,7 @@ git config --global credential.helper 'cache --timeout=3600'
 ```curl --socks5-hostname 127.0.0.1:1080 http://wtfismyip.com/json```
 [ SOCKS commands ](https://gist.github.com/fearblackcat/850c6e027d5a03017c44daaa6a7ffc30)
 [ git proxies ](http://cms-sw.github.io/tutorial-proxy.html)
+
+### 01/01/2018
+```dd if=/dev/urandom | gzip -9 >> /dev/null &```
+

@@ -4,8 +4,7 @@
 	- Broad network access
 	- Resource pooling
 	- Rapid elasticity
-	- Measured service
-- GCP Pricing offers per second billing for
+	- Measured service - GCP Pricing offers per second billing for
 	- Google Compute Engine
 	- Kubernetes Engine := Container Infrastructure as a service
 	- Cloud Data Proc := Hadoop as a Service
@@ -77,7 +76,61 @@
 	- highly scalable NoSQL databse
 	- SQL like queries
 	- free daily quota
-	- 
+- Kubernetes
+	- Runs on Compute Engine
+	- Managed service releaves developers of operational details
+	- Google Cloud container builder
+	- Google Cloud container registry
+		- Users IAM permissions and stored in google cloud
+- App Engine
+	- Built in Services for NosqL, in-memory caching, load balancing, health checks, logging etc.a
+	- Standard, and Flexible environements
+	- Standard has no charge for low utilization
+	- Standard is for specific versions of Python, Java, PhP, and Go
+	- Flexible App Engine manages Docker containers
+	- Cloud Endpoint 
+	- Apigee Edge - Analytics of edge and gradually decompose pre-existing monolithic application
+- Development in the cloud
+	- Cloud Source Repositories
+		- Any number of private git repositories
+	- Cloud Functions 
+		- single purpose functions that respond to events without a server at runtime
+	- Infrastructure as Code - YAML markup of deployment environment
+		- Store and configure deployment manager template in cloud source repositories
+	- Stackdriver	
+		- Monitoring, Logging, Error Reporting, Debugger, Trace	
+		- Any code location in production can be inspected
+- Cloud Big Data Platform
+	- Cloud Dataflow -> General Purpose ETL
+		-  fraud detection and financial services, IoT analytics in manufacturing, healthcare and logistics and click stream, point of sale and segmentation analysis in retail
+		- Cloud Dataflow is a better choice than Dataproc for unpredictable size or rate data
+		- Fully automates the management of whatever resources are required
+	- Big Query is Google's fully managed, petabyte scale, low cost analytics data warehouse.
+		- Load from cloud storage, cloud datastore or stream up to 100,000 rows per second.  	
+	 	- Storage and Queries are billed seperately
+		- Price drops after 90 days of storage
+	- Cloud Pub/Sub is a reliable, scalable foundation for stream analytics 
+		- great for decoupling systems
+		- at least once delivery at low latency
+		- 
+	- Cloud Datalab 
+		- lets you analyize your data in Jupyter notebooksa
+	- *Machine Learning Platforms*
+		- applications that improve themselves over time!
+		- Tensorflow is an open source software library that's exceptionally well suited for machine learning
+		- GCP is an ideal 
+		- Each TPU provides up to 180 teraflopw of performance
+		
+		- Cloud Vision API
+		- Cloud Speach API
+			- Over 80 languages and variants		
+		- Language API 
+			- syntax and sentimate analysis
+		- Video Intelligence API
+			- annotate videos and make content searchable and discoverable
+		
+			  
+
 	 
 
 
