@@ -1,4 +1,5 @@
-## 08/28/2017
+#
+ 08/28/2017
 Lord Huron rules...
 alsa
 
@@ -2811,6 +2812,91 @@ git config --global credential.helper 'cache --timeout=3600'
 [ SOCKS commands ](https://gist.github.com/fearblackcat/850c6e027d5a03017c44daaa6a7ffc30)
 [ git proxies ](http://cms-sw.github.io/tutorial-proxy.html)
 
-### 01/01/2018
+### 01/01/2019
 ```dd if=/dev/urandom | gzip -9 >> /dev/null &```
 
+### 01/02/2019
+- [ Scaling PyData Up and Out with Anaconda by Travis Oliphant ](https://www.youtube.com/watch?time_continue=669&v=bH7UAQ3YKCk)
+	- Making Ufuncs with Numba
+	- Numba scales up, Dask for scaling out
+	- Numba allows JIT translation and optimizatin of Python code to IR for CPU and GPU execution
+	- Dask implements collections, graph management, and schedulers for distributed processing
+		- Dask array, Dask bag , Dask dataframe,  Dask imperatives (delayed)
+		- dcluster, yarn, SGE, slurm,
+	- bokeh visualization
+	- Blaze ecosystem -> dask, odo, dynd, datashape, data-fabric, and beyond..
+	-
+- [Starting JAVA_HOME for Applications on OSX](https://medium.com/zendesk-engineering/setting-java-home-on-mac-os-acd44e3a6027)
+	 ```export JAVA_HOME=`/usr/libexec/java_home -d 64 -v "1.7*"````
+	 ``` launchctl setenv JAVA_HOME `/usr/libexec/java_home` ```
+
+##### Vbox Ubuntu on 27" Imac 5k
+- sudo VBoxClient --clipboard
+
+```
+git checkout -b branch_name
+git branch --set-upstream-to=origin/track_branch branch_name 
+git stash
+git rebase
+git merge --squash or git rebase -i HEAD~3 (for last three [change to fixup])
+git push -f origin branch_name
+
+git stash pop
+
+```
+### 01/04/2018
+- [ John Lakos, "Local ('Arena') Memory Allocators ](https://www.youtube.com/watch?v=CFzuFNSpycI)
+	- Monotonic allocator performed best for ordered and unordered set of strings
+	- Local allocation
+	- 
+
+- ``` sudo mount -t vboxsf share  /mnt/mountpoint ```	 
+- [ vbox mounts ](https://stackoverflow.com/questions/6298933/shared-folder-in-virtualbox-for-apache)
+- [ tracking pkg bombs ](https://apple.stackexchange.com/questions/125220/how-do-i-know-what-files-are-installed-by-an-installer-program)
+-
+
+
+### 01/08/2018
+- [ uarray - Efficient and Generic ARray Computation = Travis E. Oliphant, Saul Shanabrook](https://youtu.be/CAi8vgRakuk)
+	-  Buffer Protocol (PEP 3118) -> XND -> all Pythn objects share memory ( strided with shape)
+	- __array_interface__ -> u_array -> object describes how it can be accessed as an array
+	- 
+	- Numpy
+		- dtype := dadta description, no pointers
+		- umath := DEShaw added "generalized ufuncs
+		- dnarray := pointer to data container an apply gneralized ufuncs
+	- XND = language bindings: { ndtypes, gumath }, C-libraries: libndtypes: { libgumath, libxnd }
+	- array is mapping of index space to to 0..N-1 (labels)
+
+### 01/08/2018
+``` git diff --name-only --diff-filter=U ```
+[ track rebase squash ](https://shinglyu.github.io/web/2016/11/08/servo-rebase-and-squash-guide.html)
+[ git squashed 'github'](https://help.github.com/articles/about-pull-request-merges/)
+
+### 01/09/2018
+[ jupyter edit mode shortcuts ](https://datalya.com/blog/python-data-science/jupyter-notebook-edit-mode-keyboard-shortcuts)
+
+### 01/13/2019
+[ memory allocators ](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0089r0.pdf)
+[ memory management ](https://en.wikipedia.org/wiki/Memory_management)
+[ allocator validation ](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0213r0.pdf)
+	- Local Allocator:= An allocator that is scoped to provide memory to a proper subset of
+objects (one or more), rather than the entire process. The monotonic and multipool allocators, outlined in Chapter 5: “Allocators Used: Monotonic and Multipool,” are examples of local allocators.
+	- A multipool allocator consists of an array of (adaptive) pools, one for each geometrically increasing request size in a range up to some specified maximum. 
+	- 
+
+## 01/21/2018
+[ Eric Xing - System and Algorithm co-design ] (https://www.youtube.com/watch?v=xMICwRm21K0)
+	- [ slides ](https://petuum.com/pdf/DL-all-final2.pdf)
+	- Bulk Synchronous Parallel Model ( Valiant & McColl )
+		- Bridging model includes Hadoop and Spark
+	- A Stale Synchronous Parallel Bridging Model ( Ho et. al., 2013 )
+	- Bosen: a bounded-asynchronous distributed key-value store
+	- A Structure-aware Dynamic Scheduler, Strads (Lee et al., 2014)(Kim et al, 2016)
+	- Hybrid CNN and Managed Communications ( Zhang et. al. 2015 )  
+	- [ Petuum : Orpheus ](https://petuum.com/pdf/socc18_xie.pdf)
+
+## 01/26/2018
+- [ memory words ](https://stackoverflow.com/a/381368)
+	- The cpu always reads at its word size
+- [ data alignment ](https://www.ibm.com/developerworks/library/pa-dalign/)

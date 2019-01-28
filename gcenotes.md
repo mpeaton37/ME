@@ -129,7 +129,13 @@
 		- Video Intelligence API
 			- annotate videos and make content searchable and discoverable
 		
-			  
+- Virtual Networking
+	- Implied deny out ingress and egress allow all firewall rules exist for the network
+	- Direction, source or destination, protocol/port, action, priority, and instance can all be specified for firewall rules
+	- tags can be used between internal vm's for ingress rules.
+	- Increased availability can be acheived by adding vm's in different zones to subnets
+	- Bastion host provides external interface to an otherwise internal service.
+	- VM's offer per-second billing, sustained use discounts  
 
 	 
 
@@ -308,4 +314,5 @@ client.get_versions()
 
 
 ![Data Lake](https://cloud.google.com/solutions/images/data-lake-workflow.svg)
+
 
