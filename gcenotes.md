@@ -137,9 +137,36 @@
 	- Bastion host provides external interface to an otherwise internal service.
 	- VM's offer per-second billing, sustained use discounts  
 
-	 
-
-
+- Load Balancing
+	- Global and Regional
+		- Global 
+			- HTTP Load balancing: distrubutes based on proximity to user and/or requested URL	
+			- SSL proxy load balancing: distributes SSL traffic amont groups of instances based on proximity to user
+			- TCP proxy load balancing: "" TCP ""
+		- Regional
+			- Network load balancing: distributes among pool, any TCP/UDP
+			- Internal load balancing: distributes from GCP
+- Managed Instance Groups: identical instance based on instance template
+	- Health checks determine whether instances are available to do work
+	- 
+- Health check and load balancing are configurable 
+	- https load balancing 80:8080, 443
+	- GCLB cookies for user -> instance assignement
+	- Instance templates define managed instance groups which can be managed in part by an autoscaler
+	- CLIENT_IP_PROT CLIENT_IP specify for persistant usr<->backend mapping
+	- provision at 100% for 2/3 service, 150% for full service during outage 	
+- Autoscaling
+	- one autoscaler per managed instance group
+	- policies detemine autoscaling behaviors
+	- cpu utilization, http load balancing
+- Infrastructure Automation
+	- Snapshots can be taken and used to provide boot images withing a project
+	- Custom images can be developed and share dbetween projects
+	- Custom images can be upload from other platforms or local VM's
+	- Deployment manager is an infrastructure automation tool.
+	- Orchestration tools: Puppet, Chef, Terraform, Cloud Formation, ( Deployment Manager)
+	- Cloud launcher avails common "tested and verified" implementations (paid and free)  	
+  
 [Chris Ostrouchov's notes](https://gist.github.com/costrouc/d9db5f6f81779418842bb0df580a11ca)
 
 #### Google Cloud Services Coursera Course

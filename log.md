@@ -2900,3 +2900,10 @@ objects (one or more), rather than the entire process. The monotonic and multipo
 - [ memory words ](https://stackoverflow.com/a/381368)
 	- The cpu always reads at its word size
 - [ data alignment ](https://www.ibm.com/developerworks/library/pa-dalign/)
+
+## 02/01/2018
+- [ ipykernel ](https://ipython.readthedocs.io/en/stable/install/kernel_install.html#kernels-for-different-environments)
+	- '''python -m ipykernel install --user --name other-env --display-name "Python (other-env)" '''
+- [ nb_conda_kernels ](https://github.com/Anaconda-Platform/nb_conda_kernels) 
+## 02/09/2018
+- [ TACO ](https://youtu.be/Kffbzf9etLEh)
