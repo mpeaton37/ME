@@ -1,3 +1,172 @@
+### Google Cloud Platform Fundamentals
+- NIST definition of cloud computing: way of using IT that has:
+	- On demand
+	- Broad network access
+	- Resource pooling
+	- Rapid elasticity
+	- Measured service - GCP Pricing offers per second billing for
+	- Google Compute Engine
+	- Kubernetes Engine := Container Infrastructure as a service
+	- Cloud Data Proc := Hadoop as a Service
+	- App Engine := Platform as a Servicee
+	- Sustained use discounts are available for over 25% use/month
+- Several open API's are available from GCP
+	- Cloud Bigtable : Database that implements Hbase interface	
+	- Cloud Dataproc := Hadoop 
+	- Tansorflow := Software library for machine learning
+	- Kubernetes := Container management allows users to mix and match
+	- StackDriver := Cloud monitoring service.
+	- google provides compatability layers to prevent lock-in
+	- 
+- Summary
+	- Compute, Storage, Big Data, Networking, Machine Learning and  Operations and tools
+	- Compute = [ Compute Engine, Kubernetes Engine, App Engine, Cloud Functions ]
+	- Storage = [ Bigtable, Cloud Storage, Cloud SQL, Cloud Spanner, Cloud Datastore ] 
+	- Big Data = [ BigQuery, Pub/Sub, Dataflow, Dataproc, Datalab]
+	- Machine Learning = [ Natural Language API, Vision API, Machine Learning, Speech API, Translate API ]
+- Multi-layered security approach
+	- Hardware Infrastructure - Hardware design and provenance (Titan chip); secure boot stack; premises security
+	- Service deploymnent - Encryption of inter-service communication
+	- User identity - Central identity service with support for U2F
+	- Storage services - Encryption at rest
+	- Internet conmunications - Google Front End; designed in Denial of Service protection
+	- Operational security - Intrusion detections systems; techniques to reduce insider risk; employee U2F use; software development practices	
+	- Resource hierarchy levels define trust boundaries.  Policies are inherited downward.
+	-   
+- IAM roles
+	- (Who), can do (What), on which resource (Where) 
+	- Who = ( account, cloud identity user, service account, google group, gsuite identity or domain )
+	- What = ( primitive = (owner, editor, viewer, billing administrator),predefined=(),custom= (),) 
+	- Where = ( project, folder or org) 	
+- Interacting with Google Cloud
+	- Cloud Client Libraries := Latest and recommended libraries
+	- Google API Client Library := generallity and completeness
+	- Cloud Console Mobile App
+- Cloud Launcher (Former Cloud Launcher) 
+	-   
+- Google Cloud VPC
+	- SEgment, Firewall rules, create static routes
+	- VPC networks have global scope, subnets are regional and may span any GCP region worldwide
+	- Cloud load balancing Frontends and produces cross region failover and load balancing
+	- Global Https, SSL proxy, TCP proxy, REgional, Regional Internal load-balancing options
+	- VPN, Direct Peering, Carrier Peering, Dedicated Interconnect
+	- Cloud Routing over Border Gateway Protocol.
+	
+- Cloud Storage
+	- Object sotrage is not a filesystem
+	- Storage Objects are immutable
+	- Data at rest and in transit are encrypted
+	- Multi-Regional, Regional, Nearline, Coldline
+	- Storage Price, vs Transfer Price 
+	- 
+- BigTable
+	- HBase interface
+	- Low Latency, large data
+	- in from Dataflow, Spark, Storm
+	- read and written from Hadoop map reduce, Dataflow, or spark
+	- used by google for Google maps
+	-  
+- Cloud SQL and Cloud Spanner
+	- Provides read, failover, and external replica services
+	- on demand or scheduled backups
+	- verticle (machine type) and horizontal scaling ( read replicas)
+	- accesible from other google services
+	- Cloud Spanner allows global scaling
+- Cloud Datastore
+	- highly scalable NoSQL databse
+	- SQL like queries
+	- free daily quota
+- Kubernetes
+	- Runs on Compute Engine
+	- Managed service releaves developers of operational details
+	- Google Cloud container builder
+	- Google Cloud container registry
+		- Users IAM permissions and stored in google cloud
+- App Engine
+	- Built in Services for NosqL, in-memory caching, load balancing, health checks, logging etc.a
+	- Standard, and Flexible environements
+	- Standard has no charge for low utilization
+	- Standard is for specific versions of Python, Java, PhP, and Go
+	- Flexible App Engine manages Docker containers
+	- Cloud Endpoint 
+	- Apigee Edge - Analytics of edge and gradually decompose pre-existing monolithic application
+- Development in the cloud
+	- Cloud Source Repositories
+		- Any number of private git repositories
+	- Cloud Functions 
+		- single purpose functions that respond to events without a server at runtime
+	- Infrastructure as Code - YAML markup of deployment environment
+		- Store and configure deployment manager template in cloud source repositories
+	- Stackdriver	
+		- Monitoring, Logging, Error Reporting, Debugger, Trace	
+		- Any code location in production can be inspected
+- Cloud Big Data Platform
+	- Cloud Dataflow -> General Purpose ETL
+		-  fraud detection and financial services, IoT analytics in manufacturing, healthcare and logistics and click stream, point of sale and segmentation analysis in retail
+		- Cloud Dataflow is a better choice than Dataproc for unpredictable size or rate data
+		- Fully automates the management of whatever resources are required
+	- Big Query is Google's fully managed, petabyte scale, low cost analytics data warehouse.
+		- Load from cloud storage, cloud datastore or stream up to 100,000 rows per second.  	
+	 	- Storage and Queries are billed seperately
+		- Price drops after 90 days of storage
+	- Cloud Pub/Sub is a reliable, scalable foundation for stream analytics 
+		- great for decoupling systems
+		- at least once delivery at low latency
+		- 
+	- Cloud Datalab 
+		- lets you analyize your data in Jupyter notebooksa
+	- *Machine Learning Platforms*
+		- applications that improve themselves over time!
+		- Tensorflow is an open source software library that's exceptionally well suited for machine learning
+		- GCP is an ideal 
+		- Each TPU provides up to 180 teraflopw of performance
+		
+		- Cloud Vision API
+		- Cloud Speach API
+			- Over 80 languages and variants		
+		- Language API 
+			- syntax and sentimate analysis
+		- Video Intelligence API
+			- annotate videos and make content searchable and discoverable
+		
+- Virtual Networking
+	- Implied deny out ingress and egress allow all firewall rules exist for the network
+	- Direction, source or destination, protocol/port, action, priority, and instance can all be specified for firewall rules
+	- tags can be used between internal vm's for ingress rules.
+	- Increased availability can be acheived by adding vm's in different zones to subnets
+	- Bastion host provides external interface to an otherwise internal service.
+	- VM's offer per-second billing, sustained use discounts  
+
+- Load Balancing
+	- Global and Regional
+		- Global 
+			- HTTP Load balancing: distrubutes based on proximity to user and/or requested URL	
+			- SSL proxy load balancing: distributes SSL traffic amont groups of instances based on proximity to user
+			- TCP proxy load balancing: "" TCP ""
+		- Regional
+			- Network load balancing: distributes among pool, any TCP/UDP
+			- Internal load balancing: distributes from GCP
+- Managed Instance Groups: identical instance based on instance template
+	- Health checks determine whether instances are available to do work
+	- 
+- Health check and load balancing are configurable 
+	- https load balancing 80:8080, 443
+	- GCLB cookies for user -> instance assignement
+	- Instance templates define managed instance groups which can be managed in part by an autoscaler
+	- CLIENT_IP_PROT CLIENT_IP specify for persistant usr<->backend mapping
+	- provision at 100% for 2/3 service, 150% for full service during outage 	
+- Autoscaling
+	- one autoscaler per managed instance group
+	- policies detemine autoscaling behaviors
+	- cpu utilization, http load balancing
+- Infrastructure Automation
+	- Snapshots can be taken and used to provide boot images withing a project
+	- Custom images can be developed and share dbetween projects
+	- Custom images can be upload from other platforms or local VM's
+	- Deployment manager is an infrastructure automation tool.
+	- Orchestration tools: Puppet, Chef, Terraform, Cloud Formation, ( Deployment Manager)
+	- Cloud launcher avails common "tested and verified" implementations (paid and free)  	
+  
 [Chris Ostrouchov's notes](https://gist.github.com/costrouc/d9db5f6f81779418842bb0df580a11ca)
 
 #### Google Cloud Services Coursera Course
@@ -6,11 +175,11 @@
 - Cloud Storage is a Blob
   - Bucket like domain name gs://acme-sales/data
   - use gsutil {cp,mv,rsync,etc.}
-  - REST API
-  - Use Cloud Storage as a holding area
+  - REST API - Use Cloud Storage as a holding area
   - Zone locallity to reduce latency, distribute for redundancy & global access.s
 
 #### Google Cloud Platform
+- 
 - Intro to Scaling Data Analysis
 	- ![DataStore is like a persistant HashMap](http://35.225.147.84/images/gcenotes/Datastore.png?_ga=2.51433632.-80940699.1539256678&_gac=1.208334118.1541249466.EAIaIQobChMI77Lp0t-13gIVC77ACh125w3fEAAYASAAEgK2efD_BwE)
 	- ![Crud Operations are easily implemented in Datastore](http://35.225.147.84/images/gcenotes/Crud.png)
@@ -172,3 +341,5 @@ client.get_versions()
 
 
 ![Data Lake](https://cloud.google.com/solutions/images/data-lake-workflow.svg)
+
+
