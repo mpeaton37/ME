@@ -32,10 +32,11 @@
 				- datalab create my-datalab-vm --machine-type n1-highmem-8 --zone us-central1-a
 				- [ gcloud install](https://cloud.google.com/sdk/docs/quickstart-macos) 
 				- datalab supports BigQuery
-
+            - [ BigQuery cookbook](https://support.google.com/analytics/answer/4419694?hl=en), [Avoiding SQL Anti-pattern](https://cloud.google.com/bigquery/docs/best-practices-performance-patterns)
+            - [ BigQuery Dimensions ](https://medium.com/@doctusoft/data-warehouse-in-bigquery-dimensions-part-1-af7c0d24a117)
 - CloudML Engine simplifies the use of distributed Tensorflow in no-ops
-- pip install google-api-python-client
-
+- [Build a DataLake](https://cloud.google.com/solutions/build-a-data-lake-on-gcp)
+ 
 ##### Array <-> Tree  ... Simplex?
 
 
@@ -92,7 +93,7 @@ client.get_versions()
 
 ```
 - Cloud Dataproc is a fast, easy-to-use, fully managed service on GCP for running Apache Spark and Apache Hadoop workloads in a simple, cost-efficient way. Even though Cloud Dataproc instances can remain stateless, we recommend persisting the Hive data in Cloud Storage and the Hive metastore in MySQL on Cloud SQL. 
-
+![dataproc decision](https://cloud.google.com/dataflow/images/flow-vs-proc-flowchart.svg)
 ![data transfer methods](https://cloud.google.com/solutions/images/tran5.png)
 ![defining close](https://cloud.google.com/solutions/images/transfer-speed.png)
 
@@ -112,7 +113,7 @@ client.get_versions()
     - [Cloud Dataproc](https://cloud.google.com/solutions/images/using-apache-hive-on-cloud-dataproc-1.svg) is a fast, easy-to-use, fully managed service on GCP for running Apache Spark and Apache Hadoop workloads in a simple, cost-efficient way. Even though Cloud Dataproc instances can remain stateless, we recommend persisting the Hive data in Cloud Storage and the Hive metastore in MySQL on Cloud SQL. 
     - [MJTelco](https://cloud.google.com/certification/guides/data-engineer/casestudy-mjtelco)
 
-- Datastore
+- [Datastore](https://cloud.google.com/datastore/docs/concepts/overview)
 - Pub/Sub
 - Gloud Storage
 - Data Proc
@@ -124,15 +125,22 @@ client.get_versions()
 - Container Storage
 - Kubernetes Engine
 - Compute Engine
-- Key Storage
-- 
-
+- Key Storage (KMS)
+    - [ KMS ](https://cloud.google.com/kms/?utm_source=google&utm_medium=cpc&utm_campaign=na-US-all-en-dr-bkws-all-all-trial-b-dr-1003905&utm_content=text-ad-none-any-DEV_c-CRE_293220272125-ADGP_Hybrid+%7C+AW+SEM+%7C+BKWS+%7C+US+%7C+en+%7C+BMM+~+Identity/Security+~+KMS+~+Google+Cloud+Key+Management-KWID_43700036550313578-kwd-283025362978&utm_term=KW_%2Bgoogle%20%2Bcloud%20%2Bkey%20%2Bmanagement-ST_%2Bgoogle+%2Bcloud+%2Bkey+%2Bmanagement&gclid=Cj0KCQiA3IPgBRCAARIsABb-iGIv88JnnGl68n_i7Sp_JkKQjlYQw1WOrYpU2rxz7vQmLF-_Prbl1soaAsbWEALw_wcB)
+- IAM
+    [ Overview ](https://cloud.google.com/storage/docs/access-control/iam)
+- Data Studio
+    - [Youtube Analytics connector](https://support.google.com/datastudio/answer/7020432?hl=en)
+    - Filter for Specific segment, dimension for full segmentation
+        - [ Filters ](https://support.google.com/datastudio/answer/6291066?hl=en)
+- Vision API
+    - [ annotations ](https://medium.com/@srobtweets/exploring-the-cloud-vision-api-1af9bcf080b8)
 ### DataBase
     - [Spanner](https://cloud.google.com/spanner/docs/)
     - [BigTable](https://cloud.google.com/bigtable/docs/)
         - [Managing Tables](https://cloud.google.com/bigtable/docs/managing-tables)
         - [cbt tool](https://cloud.google.com/bigtable/docs/cbt-overview) or [Hbase shell](https://cloud.google.com/bigtable/docs/installing-hbase-shell)
-    
+     
 ### Storage
 - [Storage Classes](https://cloud.google.com/storage/docs/storage-classes)
     - Multi-Regional: hot around the world , Regional: narrow geographical, Nearline: < 1/mo, Coldline: < 1/yr, 
@@ -144,6 +152,7 @@ client.get_versions()
 - [BigQueryStorage](https://cloud.google.com/bigquery/pricing)
 - [ Transfer Appliance](https://cloud.google.com/data-transfer/pricing)
 - [ Persistant Disk ](https://cloud.google.com/persistent-disk/) 
+- [ Cloud DataStore ](https://cloud.google.com/datastore/pricing)
 
 ### Data Transfer
 - [ Transfering big Data Sets](https://cloud.google.com/solutions/transferring-big-data-sets-to-gcp)
@@ -161,3 +170,5 @@ client.get_versions()
 ### Misc
 - [Data Partitioning](https://www.cathrinewilhelmsen.net/2015/04/12/table-partitioning-in-sql-server/)
 
+
+![Data Lake](https://cloud.google.com/solutions/images/data-lake-workflow.svg)
