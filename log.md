@@ -2770,6 +2770,8 @@ git config --global credential.helper cache
 git config --global credential.helper 'cache --timeout=3600'
 
 ```
+<<<<<<< HEAD
+=======
 ### 12/20/2018
 [echo "ServerAliveInterval 120" > /etc/ssh/ssh_config](https://askubuntu.com/a/142430)
 [MS restore ](https://docs.microsoft.com/en-us/sql/t-sql/statements/restore-statements-transact-sql?view=sql-server-2017)
@@ -2907,6 +2909,7 @@ objects (one or more), rather than the entire process. The monotonic and multipo
 - [ nb_conda_kernels ](https://github.com/Anaconda-Platform/nb_conda_kernels) 
 ## 02/09/2019
 - [ TACO ](https://youtu.be/Kffbzf9etLEh)
+<<<<<<< HEAD
 
 ## 02/28/2019
 -[ Scipy Three ways to wrap ](https://docs.scipy.org/doc/numpy-1.15.1/f2py/getting-started.html)
@@ -2947,3 +2950,4 @@ objects (one or more), rather than the entire process. The monotonic and multipo
 - [library hell](http://nickdesaulniers.github.io/blog/2016/11/20/static-and-dynamic-libraries/)
 
  
+=======
