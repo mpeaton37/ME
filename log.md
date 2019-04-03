@@ -2844,7 +2844,7 @@ git push -f origin branch_name
 git stash pop
 
 ```
-### 01/04/2018
+### 01/04/2019
 - [ John Lakos, "Local ('Arena') Memory Allocators ](https://www.youtube.com/watch?v=CFzuFNSpycI)
 	- Monotonic allocator performed best for ordered and unordered set of strings
 	- Local allocation
@@ -2856,7 +2856,7 @@ git stash pop
 -
 
 
-### 01/08/2018
+### 01/08/2019
 - [ uarray - Efficient and Generic ARray Computation = Travis E. Oliphant, Saul Shanabrook](https://youtu.be/CAi8vgRakuk)
 	-  Buffer Protocol (PEP 3118) -> XND -> all Pythn objects share memory ( strided with shape)
 	- __array_interface__ -> u_array -> object describes how it can be accessed as an array
@@ -2868,12 +2868,12 @@ git stash pop
 	- XND = language bindings: { ndtypes, gumath }, C-libraries: libndtypes: { libgumath, libxnd }
 	- array is mapping of index space to to 0..N-1 (labels)
 
-### 01/08/2018
+### 01/08/2019
 ``` git diff --name-only --diff-filter=U ```
 [ track rebase squash ](https://shinglyu.github.io/web/2016/11/08/servo-rebase-and-squash-guide.html)
 [ git squashed 'github'](https://help.github.com/articles/about-pull-request-merges/)
 
-### 01/09/2018
+### 01/09/2019
 [ jupyter edit mode shortcuts ](https://datalya.com/blog/python-data-science/jupyter-notebook-edit-mode-keyboard-shortcuts)
 
 ### 01/13/2019
@@ -2885,7 +2885,7 @@ objects (one or more), rather than the entire process. The monotonic and multipo
 	- A multipool allocator consists of an array of (adaptive) pools, one for each geometrically increasing request size in a range up to some specified maximum. 
 	- 
 
-## 01/21/2018
+## 01/21/2019
 [ Eric Xing - System and Algorithm co-design ] (https://www.youtube.com/watch?v=xMICwRm21K0)
 	- [ slides ](https://petuum.com/pdf/DL-all-final2.pdf)
 	- Bulk Synchronous Parallel Model ( Valiant & McColl )
@@ -2896,14 +2896,54 @@ objects (one or more), rather than the entire process. The monotonic and multipo
 	- Hybrid CNN and Managed Communications ( Zhang et. al. 2015 )  
 	- [ Petuum : Orpheus ](https://petuum.com/pdf/socc18_xie.pdf)
 
-## 01/26/2018
+## 01/26/2019
 - [ memory words ](https://stackoverflow.com/a/381368)
 	- The cpu always reads at its word size
 - [ data alignment ](https://www.ibm.com/developerworks/library/pa-dalign/)
 
-## 02/01/2018
+## 02/01/2019
 - [ ipykernel ](https://ipython.readthedocs.io/en/stable/install/kernel_install.html#kernels-for-different-environments)
 	- '''python -m ipykernel install --user --name other-env --display-name "Python (other-env)" '''
 - [ nb_conda_kernels ](https://github.com/Anaconda-Platform/nb_conda_kernels) 
-## 02/09/2018
+## 02/09/2019
 - [ TACO ](https://youtu.be/Kffbzf9etLEh)
+
+## 02/28/2019
+-[ Scipy Three ways to wrap ](https://docs.scipy.org/doc/numpy-1.15.1/f2py/getting-started.html)
+-[ Signature file ](https://docs.scipy.org/doc/numpy/f2py/signature-file.html)
+
+## 03/04/2018
+- [ MOA Radar ](https://www.researchgate.net/profile/Lenore_Mullin/publication/262407372_A_uniform_way_of_reasoning_about_array-based_computation_in_radar_Algebraically_connecting_the_hardwaresoftware_boundary/links/5b313a234585150d23d1bd01/A-uniform-way-of-reasoning-about-array-based-computation-in-radar-Algebraically-connecting-the-hardware-software-boundary.pdf?origin=publication_detail)
+
+## 03/05/2018
+- [ Installing IPython Kernel ](https://ipython.readthedocs.io/en/stable/install/kernel_install.html)
+- [ pytorch-internal-architecture-tour](http://blog.christianperone.com/2018/03/pytorch-internal-architecture-tour/#dlpack)
+- [ a tour of pytorch internals ](https://pytorch.org/blog/a-tour-of-pytorch-internals-1/)
+- [ a tour of pytorch internals 2](https://pytorch.org/blog/a-tour-of-pytorch-internals-2/)
+- [ extending python](https://docs.python.org/3.7/extending/index.html)
+- [ typeobj in python](https://docs.python.org/3/c-api/typeobj.html)
+- [ librosa ](https://github.com/librosa/librosa/blob/master/examples/LibROSA%20demo.ipynb)
+- [ llvm ](https://llvm.org/)
+- [ numba ](https://www.youtube.com/watch?v=LmlJcZYpAi0&feature=youtu.be)
+- [numba-examples ](https://github.com/numba/numba-examples)
+- [ pep 3118 ](https://www.python.org/dev/peps/pep-3118/)
+- [ Python buffer protocol ](https://docs.python.org/3/c-api/buffer.html#c.PyObject_GetBuffer)
+- [ Sly ](https://sly.readthedocs.io/en/latest/sly.html)
+
+## 03/06/2018
+- [ Named Tensors ](http://nlp.seas.harvard.edu/NamedTensor)
+- [ Anaconda Enterprise ](http://admin.training.anaconda.com/architecture.html#nodes-and-services)
+- [ Cling ](https://cdn.rawgit.com/root-project/cling/master/www/index.html)
+- [ IPython kernel ](https://ipython.readthedocs.io/en/stable/install/kernel_install.html)
+	- ``` python -m ipykernel install --user --name xndframes --display-name xndframes```
+- [ fftw benchmarks ](http://www.fftw.org/speed/CoreDuo-3.0GHz-icc/)
+- [ intl mkl ](https://software.intel.com/en-us/mkl/features/benchmarks)
+- [ Hallide ](http://stellar.mit.edu/S/course/6/sp15/6.815/courseMaterial/topics/topic2/lectureNotes/14_Halide_print/14_Halide_print.pdf)
+
+## 03/15/2018
+- [ SciPy Build ](https://docs.scipy.org/doc/numpy-1.10.4/dev/development_environment.html)
+
+### 03/18/2018
+- [library hell](http://nickdesaulniers.github.io/blog/2016/11/20/static-and-dynamic-libraries/)
+
+ 

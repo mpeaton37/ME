@@ -165,8 +165,46 @@
 	- Custom images can be upload from other platforms or local VM's
 	- Deployment manager is an infrastructure automation tool.
 	- Orchestration tools: Puppet, Chef, Terraform, Cloud Formation, ( Deployment Manager)
-	- Cloud launcher avails common "tested and verified" implementations (paid and free)  	
-  
+	- Cloud launcher avails common "tested and verified" implementations (paid and free)
+- Managed Services
+	- Infrastructure -> Automated Infrastructure IaaS -> PaaS -> SaaS
+		- Infrastructure: [ Console, Cloud Shell], 
+		- IaaS:[ Cloud API, Deployment Manager]
+		- PaaS:[Dataproc, Dataflow], Saas: BigQuery   	
+			- DataProc: [ Spark, Hadoop, Hive, Pig]
+			- Dataflow: [ Apache Beam]
+			- BigQuery: Fully managed Petabyte "complete" data analytics solution
+- Elastic Cloud Infrastruture: Containers and Services
+	- Kubernetes 
+- Cloud Pub/Sub
+	- Scales Globally
+		- Low Latency with dynamic rate limiting
+		- Durability, Reliability, application ACK
+		- Encryption in motion and at rest
+		- Maintenance free
+- Google Cloud Endpoints
+	- create, deploy, protect, monitor, and analyze and serve your APIs.
+	- Apigee provides data analytics and validation.
+- Google Cloud Functions
+	- Lightweight, compute solution for developers to create single purpose, stand-alone, functions that respond to cloud events without the need to manage a server or runtime environment.
+	- Single purpose, short lived, self contained.
+- Specialty API's
+	- Machine learning, Cloud job discovery, natural language, Speech, Translation, and Vision API
+- App Engine
+	- Standard and Flexible Environment
+	- Flexible environement based on Docker containers
+- Containers
+	- Google Kubernetes Engine, Google App Engine, or Containers on Compute Engine
+	- Containers help decouple Applications from dependencies
+	- Kubernetes is a fully managed service on Google
+	- A Pod holds more than one container
+	- Cluster Federation for deploying across multiple regions or providers
+	- Stackdrier login and management
+	- labels used for kubernetes to orchestrate containers (query)
+	- Deloyment groups specify rules for autoscaling.
+	- Cluster Federation offers a single logical compute across regions, clproviders, et.
+	- 
+
 [Chris Ostrouchov's notes](https://gist.github.com/costrouc/d9db5f6f81779418842bb0df580a11ca)
 
 #### Google Cloud Services Coursera Course
@@ -338,7 +376,6 @@ client.get_versions()
 
 ### Misc
 - [Data Partitioning](https://www.cathrinewilhelmsen.net/2015/04/12/table-partitioning-in-sql-server/)
-
 
 ![Data Lake](https://cloud.google.com/solutions/images/data-lake-workflow.svg)
 
