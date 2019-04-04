@@ -1,4 +1,4 @@
-### Google Cloud Platform Fundamentals
+### Google Cloud Platform Fundamentals [Fundamental Information regarding Cloud Architecture and Google Services](https://www.coursera.org/specializations/gcp-architecture)
 - NIST definition of cloud computing: way of using IT that has:
 	- On demand
 	- Broad network access
@@ -207,7 +207,7 @@
 
 [Chris Ostrouchov's notes](https://gist.github.com/costrouc/d9db5f6f81779418842bb0df580a11ca)
 
-#### Google Cloud Services Coursera Course
+#### Google Cloud Services Coursera Course (Bottom UP Learning Course)
 - Discount based on percentage of month used
 - Preemptable machine allow discounts for interrupt tolerant jobs.
 - Cloud Storage is a Blob
@@ -379,4 +379,55 @@ client.get_versions()
 
 ![Data Lake](https://cloud.google.com/solutions/images/data-lake-workflow.svg)
 
+### [Preparing for CPDE (TOP Down learning Course)](https://www.coursera.org/learn/preparing-cloud-professional-data-engineer-exam/home/welcome)
+- BigQuery
+	- Project->Dataset->Table->Column, Job(query, import, export, copy)
+	- Columnar structure
+	- BigQuery is two services, a front-end service that does analysis, and a back-end service that does storage. 
+- Pipelines
+	- Spark is in-memory lazy executed transormation engine.
+	- Tensorflow can use lazy and eager approaches
+	- Kafka<->Pub/Sub, HBase<->BigTable, HDFS<->Cloud Storage
+	- Dataflow can deploy Java or Python based transformation code.
+	- Dataflow can also execute Apache Beam on Flink, Spark, etc.
+	- Read, Filter, Transform, Compare, Group, Write
+	- Dataflow Templates, separation of work, security, reuse, blahblahblah
+- Cloud Pub/Sub handles exactly once delivery, and Cloud Dataflow handles deduplication, ordering, and windowing.
 
+- Bigtable 
+	- A Bigtable table is sharded into blocks of contiguous rows called tablets
+	- BT performance scales linearly with nodes, but takes some time to adjust to usage patterns on node increase.
+	- Cloud Bigtable allows you to 'scale in place,' 
+- Google recommends monitoring Jobs, not Operations for ML Engine.
+- $ = f(storage, processing), [Query Calculator](https://cloud.google.com/products/calculator)
+- Designing Data Processing Systems
+	- Selecting the appropriate storage technologies: Tradeoffs between latency, throughput, and transactions
+	- Designing the data pipelines:  Data publishing and visualization
+	- Designing data processing solution:  At least once, in-order, exactly once event planning.
+	- Migrating data warehousing and data processing.
+- Reliability Policy and [Security]
+	- Reliability includes Availability and Durability
+	- Distributing for scale may improve reliability
+	- A policy is set on a resource and each policy contains a set of roles and role members.
+	- Resources inherit policies from parents.
+	- If the parent policy is less restrictive, it overrides a more restrictive resource policy.
+	- Design for security and compliance
+		- Identity and access management
+		- Data security
+		- Use Groups
+		- Encryption, location, access control.  Principle of least priviledge.
+		- Shape the scope and objectives of the test.
+		- Isolate key roles and assign alternates.  Use service accounts.
+	- Scalability and efficiency
+	 	- Accessing, troubleshooting, and improving data representations and data processing architecture
+	- Ensuring reliability and fidelity
+		- Performing data preparation and quality control
+		- Planning, execution, and stress testing data recovery
+	- Ensuring flexibility and portability.
+	- 
+
+#### New stuff
+[AutoML](https://console.cloud.google.com/apis/library/automl.googleapis.com?project=apt-footing-235018&folder&organizationId=990601573935)
+[Cloud Composer](https://cloud.google.com/composer/?utm_source=google&utm_medium=cpc&utm_campaign=na-US-all-en-dr-skws-all-all-trial-e-dr-1006141&utm_content=text-ad-none-any-DEV_c-CRE_288513283632-ADGP_Hybrid+%7C+AW+SEM+%7C+SKWS+%7C+US+%7C+en+%7C+EXA+~+Big+Data+~+Cloud+Composer+~+cloud+composer-KWID_43700035823510969-kwd-427702736595&utm_term=KW_cloud%20composer-ST_cloud+composer&gclid=EAIaIQobChMImuOz75O04QIV2bbACh0wAgccEAAYASAAEgITrvD_BwE)
+
+[ Google Professional Data Engineer Exam Guide](https://cloud.google.com/certification/guides/data-engineer/)
