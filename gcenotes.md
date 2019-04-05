@@ -392,6 +392,8 @@ client.get_versions()
 	- Dataflow can also execute Apache Beam on Flink, Spark, etc.
 	- Read, Filter, Transform, Compare, Group, Write
 	- Dataflow Templates, separation of work, security, reuse, blahblahblah
+    - Batch and streaming together? You should already be thinking "Cloud Dataflow."
+
 - Cloud Pub/Sub handles exactly once delivery, and Cloud Dataflow handles deduplication, ordering, and windowing.
 
 - Bigtable 
@@ -424,7 +426,6 @@ client.get_versions()
 		- Performing data preparation and quality control
 		- Planning, execution, and stress testing data recovery
 	- Ensuring flexibility and portability.
-	- 
 
 #### New stuff
 [AutoML](https://console.cloud.google.com/apis/library/automl.googleapis.com?project=apt-footing-235018&folder&organizationId=990601573935)
